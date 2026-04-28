@@ -389,38 +389,27 @@
                 <div class="text-center mb-4" data-aos="fade-up">
                     <p style="color: rgba(255,255,255,0.85);"><i class="fas fa-location-dot me-2" style="color: #d4a574;"></i>Erbil, Iraq</p>
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN" data-aos="fade-up">
+                <!-- Contact form (Formspree-handled, AJAX-submitted) -->
+                <form id="contactForm" action="https://formspree.io/f/xaqagzjk" method="POST" data-aos="fade-up">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Your Name *" required />
                             </div>
                             <div class="form-group">
                                 <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <input class="form-control" id="email" name="email" type="email" placeholder="Your Email *" required />
                             </div>
                             <div class="form-group mb-md-0">
                                 <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Your Phone *" required />
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
                                 <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Tell me about your project *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <textarea class="form-control" id="message" name="message" placeholder="Tell me about your project *" required></textarea>
                             </div>
                         </div>
                     </div>
@@ -432,9 +421,13 @@
                         </div>
                     </div>
                     <!-- Submit error message-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">
+                            Something went wrong. Please try again, or email me directly at <a href="mailto:saryas.jaf9@gmail.com" style="color: #f5e3c0; text-decoration: underline;">saryas.jaf9@gmail.com</a>.
+                        </div>
+                    </div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
                 </form>
             </div>
         </section>
@@ -600,11 +593,49 @@
                     });
                 }
             })();
+
+            // Contact form: AJAX submission to Formspree
+            (function() {
+                var form = document.getElementById('contactForm');
+                if (!form) return;
+                var successMsg = document.getElementById('submitSuccessMessage');
+                var errorMsg = document.getElementById('submitErrorMessage');
+                var submitBtn = document.getElementById('submitButton');
+                var originalBtnText = submitBtn ? submitBtn.textContent : 'Send Message';
+
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    if (successMsg) successMsg.classList.add('d-none');
+                    if (errorMsg) errorMsg.classList.add('d-none');
+                    if (submitBtn) {
+                        submitBtn.disabled = true;
+                        submitBtn.textContent = 'Sending...';
+                    }
+
+                    fetch(form.action, {
+                        method: 'POST',
+                        body: new FormData(form),
+                        headers: { 'Accept': 'application/json' }
+                    })
+                    .then(function(response) {
+                        if (response.ok) {
+                            form.reset();
+                            if (successMsg) successMsg.classList.remove('d-none');
+                        } else {
+                            if (errorMsg) errorMsg.classList.remove('d-none');
+                        }
+                    })
+                    .catch(function() {
+                        if (errorMsg) errorMsg.classList.remove('d-none');
+                    })
+                    .finally(function() {
+                        if (submitBtn) {
+                            submitBtn.disabled = false;
+                            submitBtn.textContent = originalBtnText;
+                        }
+                    });
+                });
+            })();
         </script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
