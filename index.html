@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Saryas Jaf — Computer Engineer in Erbil, Iraq. IT infrastructure, security systems, IoT solutions, and custom electronics." />
+        <meta name="author" content="Saryas Jaf" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://saryasjaf.github.io/saryas-portfolio/" />
+        <meta property="og:title" content="Saryas Jaf — Computer Engineer &amp; IT Solutions" />
+        <meta property="og:description" content="Computer Engineer in Erbil, Iraq. IT infrastructure, security systems, IoT solutions, and custom electronics." />
+        <meta property="og:image" content="https://saryasjaf.github.io/saryas-portfolio/assets/img/header-bg.jpg" />
+        <meta property="og:site_name" content="Saryas Jaf" />
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Saryas Jaf — Computer Engineer &amp; IT Solutions" />
+        <meta name="twitter:description" content="Computer Engineer in Erbil, Iraq. IT infrastructure, security systems, IoT solutions, and custom electronics." />
+        <meta name="twitter:image" content="https://saryasjaf.github.io/saryas-portfolio/assets/img/header-bg.jpg" />
+        <title>Saryas Jaf — Computer Engineer &amp; IT Solutions</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:400,500,600,700,800&display=swap" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,700,900&display=swap" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- AOS - Animate On Scroll library -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+        <!-- Custom animations -->
+        <style>
+            html { scroll-behavior: smooth; }
+
+            /* Hero heading word-by-word entrance */
+            .hero-word {
+                display: inline-block;
+                opacity: 0;
+                transform: translateY(24px);
+                animation: heroFadeIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+            }
+            @keyframes heroFadeIn {
+                to { opacity: 1; transform: translateY(0); }
+            }
+
+            /* Service card hover lift */
+            #services .col-md-4 {
+                transition: transform 0.35s ease, box-shadow 0.35s ease;
+                padding: 2rem 1rem;
+                border-radius: 12px;
+                cursor: default;
+            }
+            #services .col-md-4:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 14px 32px rgba(254, 209, 54, 0.18);
+            }
+            #services .fa-stack {
+                transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+            }
+            #services .col-md-4:hover .fa-stack {
+                transform: rotate(8deg) scale(1.08);
+            }
+
+            /* Pulse for primary CTA in hero */
+            @keyframes ctaPulse {
+                0%, 100% { box-shadow: 0 0 0 0 rgba(254, 209, 54, 0.55); }
+                50% { box-shadow: 0 0 0 14px rgba(254, 209, 54, 0); }
+            }
+            .masthead .btn-primary { animation: ctaPulse 2.4s ease-out infinite; }
+
+            /* Hero "Start a Project" button: frosted glass */
+            .masthead .btn-outline-light {
+                background-color: rgba(255, 255, 255, 0.15) !important;
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+            }
+            .masthead .btn-outline-light:hover {
+                background-color: rgba(255, 255, 255, 0.25) !important;
+                color: #fff !important;
+                border-color: #fff !important;
+            }
+
+            /* Stats counter row */
+            .stats-row {
+                background: #fff;
+                padding: 3rem 1rem;
+                margin-bottom: 4rem;
+                border-radius: 16px;
+                box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+            }
+            .stat-item { text-align: center; padding: 1rem; }
+            .stat-number {
+                font-size: 3.6rem;
+                font-weight: 700;
+                color: #d4a574;
+                line-height: 1;
+                margin-bottom: 0.5rem;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .stat-label {
+                font-size: 0.95rem;
+                color: #6c757d;
+                text-transform: uppercase;
+                letter-spacing: 1.6px;
+                font-weight: 600;
+            }
+
+            /* Portfolio image hover zoom */
+            .portfolio-item img {
+                transition: transform 0.6s ease;
+            }
+            .portfolio-item:hover img {
+                transform: scale(1.04);
+            }
+
+            /* Contact icons hover lift */
+            #contact a[href^="tel"], #contact a[href^="mailto"], #contact a[href*="wa.me"] {
+                transition: transform 0.3s ease;
+                display: inline-block;
+            }
+            #contact a[href^="tel"]:hover, #contact a[href^="mailto"]:hover, #contact a[href*="wa.me"]:hover {
+                transform: translateY(-6px);
+            }
+
+            /* Reduced motion override - respect user preferences */
+            @media (prefers-reduced-motion: reduce) {
+                *, *::before, *::after {
+                    animation-duration: 0.01ms !important;
+                    animation-iteration-count: 1 !important;
+                    transition-duration: 0.01ms !important;
+                }
+                html { scroll-behavior: auto; }
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#page-top" style="color: #fff; font-weight: 700; font-size: 1.5rem; letter-spacing: 1px;"><img src="assets/img/logo-animated-light.svg" alt="Saryas Jaf logo" style="height: 45px; width: 45px; margin-right: 12px;" />SARYAS JAF</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading" data-aos="fade-down" data-aos-duration="800">Computer Engineer</div>
+                <h1 class="masthead-heading text-uppercase" id="hero-heading">Building Solutions Where Hardware Meets Software</h1>
+                <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="800" style="color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 720px; margin: 0 auto 2rem auto;">Helping businesses with IT infrastructure, security systems, IoT solutions, and custom electronics.</p>
+                <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+                    <a class="btn btn-primary btn-xl text-uppercase mx-2 mb-2" href="#services">Explore Services</a>
+                    <a class="btn btn-outline-light btn-xl text-uppercase mx-2 mb-2" href="#contact">Start a Project</a>
+                </div>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h3 class="section-subheading text-muted">What I help businesses build, secure, and integrate.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-5" data-aos="fade-up" data-aos-delay="100">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shield-halved fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">IT &amp; Security Systems</h4>
+                        <p class="text-muted">End-to-end IT support, network setup, and physical security. CCTV installation, access control systems, and the troubleshooting expertise from 8+ years in the field.</p>
+                    </div>
+                    <div class="col-md-4 mb-5" data-aos="fade-up" data-aos-delay="200">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-wifi fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">IoT Solutions</h4>
+                        <p class="text-muted">Connected devices that monitor, automate, and report. Built with Arduino, Raspberry Pi, and industry-standard platforms.</p>
+                    </div>
+                    <div class="col-md-4 mb-5" data-aos="fade-up" data-aos-delay="300">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-microchip fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Electronics &amp; PCB Design</h4>
+                        <p class="text-muted">Custom circuit boards from schematic to working prototype. Plus troubleshooting and repair of existing electronics.</p>
+                    </div>
+                    <div class="col-md-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-globe fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Web Development</h4>
+                        <p class="text-muted">Modern, responsive websites that work on every device. Business sites to interactive web applications.</p>
+                    </div>
+                    <div class="col-md-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="200">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-mobile-screen fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Mobile Applications</h4>
+                        <p class="text-muted">Apps that solve real problems for real users. Clean interfaces, smooth performance.</p>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-pen-ruler fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">UI/UX Design</h4>
+                        <p class="text-muted">Interfaces that look professional and feel natural to use, for web and mobile.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Selected case studies from real engineering work.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-duration="900">
+                        <!-- Case Study 1: Industrial Security Infrastructure -->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/case-1-photo.jpg" alt="Industrial CCTV camera and access control system at an oil and gas facility" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Industrial Security Infrastructure</div>
+                                <div class="portfolio-caption-subheading text-muted">CCTV &amp; Access Control · Oil &amp; Gas Sector</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-duration="900">
+                        <!-- Case Study 2: IT Operations & Strategic Integration -->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="IT operations and infrastructure" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">IT Operations &amp; Strategic Integration</div>
+                                <div class="portfolio-caption-subheading text-muted">IT Engineering · Team Leadership</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Computer Engineer based in Erbil, Iraq. 8+ years across IT engineering, security systems, and team leadership — bridging hardware and software solutions.</h3>
+                </div>
+                <!-- Animated stat counters -->
+                <div class="row stats-row" data-aos="fade-up">
+                    <div class="col-md-4 stat-item">
+                        <div class="stat-number" data-target="8" data-suffix="+">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="col-md-4 stat-item">
+                        <div class="stat-number" data-target="14">0</div>
+                        <div class="stat-label">People Lead</div>
+                    </div>
+                    <div class="col-md-4 stat-item">
+                        <div class="stat-number" data-target="6">0</div>
+                        <div class="stat-label">Service Areas</div>
+                    </div>
+                </div>
+                <ul class="timeline">
+                    <li data-aos="fade-up">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="IT Engineer at Oak Leaf Company" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2025 – Present</h4>
+                                <h4 class="subheading">IT Engineer · Oak Leaf Company</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Leading IT engineering operations: software integrations, end-user training, vendor management, and access control compliance. Bridging technical execution with business strategy.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted" data-aos="fade-up">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="Branch Manager at Oak Leaf Company" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2021 – 2025</h4>
+                                <h4 class="subheading">Branch Manager · Oak Leaf Company</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Lead a team of 14 employees. Oversaw daily operations, ensured compliance with company policies, and aligned branch goals with corporate strategy. Coached team members and reported to senior management on performance.</p></div>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="ACS and CCTV Engineer" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2019 – 2021</h4>
+                                <h4 class="subheading">ACS &amp; CCTV Engineer · Oil &amp; Gas Field</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Configured and maintained CCTV systems and access control infrastructure at a critical-infrastructure oil &amp; gas facility. Conducted inspections, integrated security solutions across existing systems, and trained on-site staff.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted" data-aos="fade-up">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="IT Support at Local IT company" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2017 – 2018</h4>
+                                <h4 class="subheading">IT Support · Local IT company</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Hands-on technical support: troubleshooting hardware and software issues, installing and configuring operating systems, performing system updates and backups. Participated in IT audits and compliance checks.</p></div>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/5.jpg" alt="B.Sc. Computer Engineering at Ishik University" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2012 – 2016</h4>
+                                <h4 class="subheading">B.Sc. Computer Engineering · Ishik University, Erbil</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Bachelor of Science in Computer Engineering. Participated in the International Engineering Conference (IEC 2016) and various professional development seminars including TEDxNishtiman.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted" data-aos="zoom-in">
+                        <div class="timeline-image">
+                            <h4>
+                                Open
+                                <br />
+                                For New
+                                <br />
+                                Projects!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- (Team and Clients sections removed - solo practitioner) -->
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="section-heading text-uppercase" style="color: #f5e3c0 !important;">Get In Touch</h2>
+                    <h3 class="section-subheading text-muted" style="color: #f5e3c0 !important;">Have a project in mind? Let's talk.</h3>
+                </div>
+                <!-- Direct contact options - displayed prominently -->
+                <div class="row text-center mb-5">
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <a href="tel:+9647701943308" style="color: #fff; text-decoration: none;">
+                            <i class="fas fa-phone fa-2x mb-2" style="color: #d4a574;"></i>
+                            <h5 class="text-uppercase" style="color: #f5e3c0;">Phone</h5>
+                            <p style="color: #f5e3c0;">+964 770 194 3308</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <a href="https://wa.me/9647701943308" target="_blank" rel="noopener" style="color: #fff; text-decoration: none;">
+                            <i class="fab fa-whatsapp fa-2x mb-2" style="color: #d4a574;"></i>
+                            <h5 class="text-uppercase" style="color: #f5e3c0;">WhatsApp</h5>
+                            <p style="color: #f5e3c0;">+964 770 194 3308</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <a href="mailto:saryas.jaf9@gmail.com" style="color: #fff; text-decoration: none;">
+                            <i class="fas fa-envelope fa-2x mb-2" style="color: #d4a574;"></i>
+                            <h5 class="text-uppercase" style="color: #f5e3c0;">Email</h5>
+                            <p style="color: #f5e3c0;">saryas.jaf9@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center mb-4" data-aos="fade-up">
+                    <p style="color: rgba(255,255,255,0.85);"><i class="fas fa-location-dot me-2" style="color: #d4a574;"></i>Erbil, Iraq</p>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN" data-aos="fade-up">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Tell me about your project *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Thanks for reaching out!</div>
+                            I'll get back to you within 24 hours.
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Saryas Jaf 2026</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:saryas.jaf9@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://wa.me/9647701943308" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="tel:+9647701943308" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <span class="text-muted">Erbil, Iraq</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Case Study 1: Industrial Security Infrastructure -->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Industrial Security Infrastructure</h2>
+                                    <p class="item-intro text-muted">CCTV &amp; Access Control deployment at a critical-infrastructure oil &amp; gas facility.</p>
+                                    <img class="img-fluid d-block mx-auto mb-4" src="assets/img/portfolio/case-1-photo.jpg" alt="Industrial CCTV camera and access control system at an oil and gas facility" style="border-radius: 8px;" />
+                                    <p>Designed, configured, and maintained CCTV systems and Access Control Systems (ACS) at an oil &amp; gas operator's facility. Conducted regular inspections, integrated security solutions into existing infrastructure, and trained on-site staff on system operation and maintenance.</p>
+                                    <h4 class="mt-4 mb-3" style="text-align: left;">System architecture</h4>
+                                    <p class="text-muted" style="text-align: left;">Three-tier integrated security architecture, from field devices through central infrastructure to the control room:</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/case-1-architecture.svg" alt="System architecture diagram" style="max-width: 100%; background: #fff; padding: 1.5rem; border-radius: 8px;" />
+                                    <h4 class="mt-4 mb-3" style="text-align: left;">Key contributions</h4>
+                                    <ul style="text-align: left; padding-left: 1.5rem;">
+                                        <li>Configured and maintained CCTV systems for 24/7 surveillance reliability</li>
+                                        <li>Installed and managed access control systems across multiple zones</li>
+                                        <li>Provided on-site and remote technical support</li>
+                                        <li>Trained staff on proper system operation and maintenance</li>
+                                        <li>Generated incident reports and recommended security upgrades</li>
+                                    </ul>
+                                    <ul class="list-inline mt-4">
+                                        <li><strong>Client:</strong> Oil &amp; Gas Field (via Oak Leaf Company)</li>
+                                        <li><strong>Period:</strong> 2019 – 2021</li>
+                                        <li><strong>Role:</strong> ACS &amp; CCTV Engineer</li>
+                                        <li><strong>Systems:</strong> CCTV hardware, ACS controllers, network infrastructure</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Case Study
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Case Study 2: IT Operations & Strategic Integration -->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">IT Operations &amp; Strategic Integration</h2>
+                                    <p class="item-intro text-muted">Bridging IT engineering with business strategy at Oak Leaf Company.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="IT operations" />
+                                    <p class="mt-4">Currently leading IT engineering. Previously managed a 14-person branch team — giving me a unique perspective: I understand IT not just as technology, but as a business enabler. This dual experience helps me design IT solutions that align with how organizations actually work.</p>
+                                    <h4 class="mt-4 mb-3" style="text-align: left;">Key contributions</h4>
+                                    <ul style="text-align: left; padding-left: 1.5rem;">
+                                        <li>Lead integration of new software solutions, including end-user training and support</li>
+                                        <li>Managed user accounts and access controls in line with security policies</li>
+                                        <li>Negotiated vendor contracts to optimize IT spending</li>
+                                        <li>Maintained system documentation for compliance and knowledge sharing</li>
+                                        <li>Bridged technical and business stakeholders to align IT with company goals</li>
+                                    </ul>
+                                    <ul class="list-inline mt-4">
+                                        <li><strong>Client:</strong> Oak Leaf Company</li>
+                                        <li><strong>Period:</strong> 2021 – Present</li>
+                                        <li><strong>Roles:</strong> IT Engineer (current), Branch Manager (2021–2025)</li>
+                                        <li><strong>Skills:</strong> IT infrastructure, software integration, vendor management, team leadership</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Case Study
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- AOS - Animate On Scroll -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <!-- Custom animations: hero words, AOS init, stat counters -->
+        <script>
+            // Hero heading: split into words for staggered fade-in
+            (function() {
+                var heading = document.getElementById('hero-heading');
+                if (heading) {
+                    var words = heading.textContent.trim().split(/\s+/);
+                    heading.innerHTML = words.map(function(word, i) {
+                        return '<span class="hero-word" style="animation-delay: ' + (0.2 + i * 0.12) + 's">' + word + '</span>';
+                    }).join(' ');
+                }
+            })();
+
+            // Initialize AOS scroll animations
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 80,
+                easing: 'ease-out-cubic'
+            });
+
+            // Animated stat counters - count up when scrolled into view
+            (function() {
+                function animateCounter(el) {
+                    var target = parseInt(el.dataset.target, 10);
+                    var suffix = el.dataset.suffix || '';
+                    var duration = 1800;
+                    var startTime = null;
+
+                    function step(now) {
+                        if (!startTime) startTime = now;
+                        var progress = Math.min((now - startTime) / duration, 1);
+                        var eased = 1 - Math.pow(1 - progress, 3);
+                        var current = Math.floor(eased * target);
+                        el.textContent = current + (progress === 1 ? suffix : '');
+                        if (progress < 1) requestAnimationFrame(step);
+                    }
+                    requestAnimationFrame(step);
+                }
+
+                if ('IntersectionObserver' in window) {
+                    var observer = new IntersectionObserver(function(entries) {
+                        entries.forEach(function(entry) {
+                            if (entry.isIntersecting) {
+                                animateCounter(entry.target);
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, { threshold: 0.4 });
+
+                    document.querySelectorAll('.stat-number').forEach(function(el) {
+                        observer.observe(el);
+                    });
+                } else {
+                    // Fallback for old browsers - just show the final number
+                    document.querySelectorAll('.stat-number').forEach(function(el) {
+                        el.textContent = el.dataset.target + (el.dataset.suffix || '');
+                    });
+                }
+            })();
+        </script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+# Claude Code session data
+.claude/
+
+# Windows OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS / Linux OS files (in case you ever clone elsewhere)
+.DS_Store
+.AppleDouble
+*~
+
+# Editor metadata
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Personal notes (local-only)
+NOTES.md
