@@ -21,6 +21,14 @@ window.addEventListener('DOMContentLoaded', event => {
             navbarCollapsible.classList.add('navbar-shrink')
         }
 
+        // Auto-close the mobile menu when the user scrolls
+        // (only fires when the collapse is actually open, i.e. on mobile after tapping Menu)
+        const navbarResponsive = document.getElementById('navbarResponsive');
+        if (navbarResponsive && navbarResponsive.classList.contains('show')) {
+            if (typeof bootstrap !== 'undefined' && bootstrap.Collapse) {
+                bootstrap.Collapse.getOrCreateInstance(navbarResponsive).hide();
+            }
+        }
     };
 
     // Shrink the navbar 
