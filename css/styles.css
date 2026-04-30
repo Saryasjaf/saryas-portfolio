@@ -10947,11 +10947,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg0.svg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
+  background-color: #02040A;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
