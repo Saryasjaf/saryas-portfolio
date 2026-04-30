@@ -36,6 +36,9 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
+    // Mirror on touchmove for iOS Safari — its `scroll` event can fire late or
+    // not at all while a fixed navbar overlays the page during a drag
+    window.addEventListener('touchmove', navbarShrink, { passive: true });
 
     //  Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
