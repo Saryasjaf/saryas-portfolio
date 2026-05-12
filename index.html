@@ -1,964 +1,1858 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Saryas Jaf — Computer Engineer in Erbil, Iraq. IT infrastructure, security systems, IoT solutions, and custom electronics." />
-        <meta name="author" content="Saryas Jaf" />
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://saryasjaf.github.io/saryas-portfolio/" />
-        <meta property="og:title" content="Saryas Jaf — Computer Engineer &amp; IT Solutions" />
-        <meta property="og:description" content="Computer Engineer in Erbil, Iraq. IT infrastructure, security systems, IoT solutions, and custom electronics." />
-        <meta property="og:image" content="https://saryasjaf.github.io/saryas-portfolio/assets/img/header-bg.jpg" />
-        <meta property="og:site_name" content="Saryas Jaf" />
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Saryas Jaf — Computer Engineer &amp; IT Solutions" />
-        <meta name="twitter:description" content="Computer Engineer in Erbil, Iraq. IT infrastructure, security systems, IoT solutions, and custom electronics." />
-        <meta name="twitter:image" content="https://saryasjaf.github.io/saryas-portfolio/assets/img/header-bg.jpg" />
-        <title>Saryas Jaf — Computer Engineer &amp; IT Solutions</title>
-        <!-- Favicon (SVG primary, ICO legacy fallback)-->
-        <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:400,500,600,700,800&display=swap" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,700,900&display=swap" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <!-- AOS - Animate On Scroll library -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
-        <!-- Custom animations -->
-        <style>
-            html { scroll-behavior: smooth; }
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="color-scheme" content="dark" />
+<meta name="author" content="Saryas Jaf" />
+<title>Saryas Jaf — Engineering, on the record.</title>
+<meta name="description" content="Saryas Jaf — Computer Engineer in Erbil, Kurdistan Region of Iraq. Eight years building the systems that keep critical sites running." />
 
-            /* Hero heading word-by-word entrance */
-            .hero-word {
-                display: inline-block;
-                opacity: 0;
-                transform: translateY(24px);
-                animation: heroFadeIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-            }
-            @keyframes heroFadeIn {
-                to { opacity: 1; transform: translateY(0); }
-            }
+<!-- Canonical URL -->
+<link rel="canonical" href="https://saryasjaf.github.io/saryas-portfolio/" />
 
-            /* Service card hover lift */
-            #services .col-md-4 {
-                transition: transform 0.35s ease, box-shadow 0.35s ease;
-                padding: 2rem 1rem;
-                border-radius: 12px;
-                cursor: default;
-            }
-            #services .col-md-4:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 14px 32px rgba(254, 209, 54, 0.18);
-            }
-            #services .fa-stack {
-                transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
-            }
-            #services .col-md-4:hover .fa-stack {
-                transform: rotate(8deg) scale(1.08);
-            }
+<!-- Favicon (SVG primary, ICO legacy fallback) -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
-            /* Pulse for primary CTA in hero */
-            @keyframes ctaPulse {
-                0%, 100% { box-shadow: 0 0 0 0 rgba(254, 209, 54, 0.55); }
-                50% { box-shadow: 0 0 0 14px rgba(254, 209, 54, 0); }
-            }
-            .masthead .btn-primary { animation: ctaPulse 2.4s ease-out infinite; }
+<!-- Open Graph / Facebook / WhatsApp / LinkedIn preview -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://saryasjaf.github.io/saryas-portfolio/" />
+<meta property="og:title" content="Saryas Jaf — Engineering, on the record." />
+<meta property="og:description" content="Computer Engineer in Erbil, Kurdistan Region of Iraq. Eight years building the systems that keep critical sites running." />
+<meta property="og:image" content="https://saryasjaf.github.io/saryas-portfolio/assets/img/hero-bg.png" />
+<meta property="og:site_name" content="Saryas Jaf" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="ar_IQ" />
+<meta property="og:locale:alternate" content="ckb_IQ" />
 
-            /* Hero "Start a Project" button: frosted glass */
-            .masthead .btn-outline-light {
-                background-color: rgba(255, 255, 255, 0.15) !important;
-                backdrop-filter: blur(8px);
-                -webkit-backdrop-filter: blur(8px);
-            }
-            .masthead .btn-outline-light:hover {
-                background-color: rgba(255, 255, 255, 0.25) !important;
-                color: #fff !important;
-                border-color: #fff !important;
-            }
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Saryas Jaf — Engineering, on the record." />
+<meta name="twitter:description" content="Computer Engineer in Erbil, Kurdistan Region of Iraq. Eight years building the systems that keep critical sites running." />
+<meta name="twitter:image" content="https://saryasjaf.github.io/saryas-portfolio/assets/img/hero-bg.png" />
 
-            /* Stats counter row */
-            .stats-row {
-                background: #fff;
-                padding: 3rem 1rem;
-                margin-bottom: 4rem;
-                border-radius: 16px;
-                box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
-            }
-            .stat-item { text-align: center; padding: 1rem; }
-            .stat-number {
-                font-size: 3.6rem;
-                font-weight: 700;
-                color: #d4a574;
-                line-height: 1;
-                margin-bottom: 0.5rem;
-                font-family: 'Montserrat', sans-serif;
-            }
-            .stat-label {
-                font-size: 0.95rem;
-                color: #6c757d;
-                text-transform: uppercase;
-                letter-spacing: 1.6px;
-                font-weight: 600;
-            }
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-            /* Portfolio image hover zoom */
-            .portfolio-item img {
-                transition: transform 0.6s ease;
-            }
-            .portfolio-item:hover img {
-                transform: scale(1.04);
-            }
+<style>
+  :root{
+    --marquee-h:50px;
+    --bg:#0a0604;
+    --bg-2:#120a06;
+    --bg-elev:#1a1410;
+    --rule:rgba(245,227,192,.10);
+    --rule-strong:rgba(245,227,192,.22);
+    --text:#fdf6e6;
+    --text-2:rgba(253,246,230,.72);
+    --mute:rgba(253,246,230,.44);
+    --gold:#d4a574;
+    --gold-bright:#f5b94a;
+    --copper:#c9682a;
+    --cream:#f5e3c0;
+    --font-display:'Fraunces',Georgia,serif;
+    --font-body:'Inter',system-ui,-apple-system,sans-serif;
+    --font-mono:'JetBrains Mono',ui-monospace,monospace;
+    --font-arabic:'IBM Plex Sans Arabic',sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);color:var(--text);
+    font-family:var(--font-body);font-size:17px;line-height:1.55;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+    cursor:auto;
+    /* Reserve space at the document's bottom so the fixed marquee at viewport
+       bottom never covers the last content (footer copyright, contact line,
+       etc.). Without this, the page's true end sits behind the marquee. */
+    padding-bottom:var(--marquee-h);
+  }
+  img{max-width:100%;display:block}
+  a{color:var(--gold);text-decoration:none;transition:color .25s ease}
+  a:hover{color:var(--gold-bright)}
+  ::selection{background:var(--gold);color:var(--bg)}
 
-            /* Contact icons hover lift */
-            #contact a[href^="tel"], #contact a[href^="mailto"], #contact a[href*="wa.me"] {
-                transition: transform 0.3s ease;
-                display: inline-block;
-            }
-            #contact a[href^="tel"]:hover, #contact a[href^="mailto"]:hover, #contact a[href*="wa.me"]:hover {
-                transform: translateY(-6px);
-            }
+  .wrap{
+    max-width:1280px;margin:0 auto;
+    /* Fluid horizontal padding: 20px on small phones → 64px on wide desktop */
+    padding:0 clamp(20px, 5vw, 64px);
+    position:relative;z-index:1;
+  }
+  /* Full-width bg that extends beyond the centered .wrap to the viewport edges */
+  .wrap::before{
+    content:'';
+    position:absolute;top:0;bottom:0;
+    left:calc(50% - 50vw);width:100vw;
+    background:var(--bg);
+    z-index:-1;
+    pointer-events:none;
+  }
+  /* Work-list is already full-width (no max-width); just needs parallax layering */
+  .work-list{position:relative;z-index:1;background:var(--bg)}
 
-            /* Reduced motion override - respect user preferences */
-            @media (prefers-reduced-motion: reduce) {
-                *, *::before, *::after {
-                    animation-duration: 0.01ms !important;
-                    animation-iteration-count: 1 !important;
-                    transition-duration: 0.01ms !important;
-                }
-                html { scroll-behavior: auto; }
-            }
+  /* ============================================================
+     Side scroll indicator
+     ============================================================ */
+  .scroll-rail{
+    position:fixed;left:24px;top:50%;transform:translateY(-50%);
+    width:1px;height:42vh;background:var(--rule);z-index:50;
+    pointer-events:none;
+  }
+  .scroll-rail .bar{
+    display:block;width:100%;background:var(--gold);height:0;transform-origin:top;
+  }
+  .scroll-rail .pct{
+    position:absolute;left:6px;top:0;
+    font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;color:var(--gold);
+    transform:translateY(-50%);transition:top .1s linear;
+  }
+  @media (max-width:1024px){ .scroll-rail{display:none} }
 
-            /* Navbar container: tight padding on mobile, asymmetric wide padding on desktop */
-            #mainNav > .container-fluid {
-                padding-left: 1rem;
-                padding-right: 1rem;
-            }
-            @media (min-width: 992px) {
-                #mainNav > .container-fluid {
-                    padding-left: 18rem;
-                    padding-right: 12rem;
-                }
-            }
+  /* ============================================================
+     Back-to-top button
+     ============================================================ */
+  /* Horizontally centered above the marquee. The translate(-50%, …) in each
+     transform pairs with `left: 50%` to keep the button anchored to the
+     viewport's horizontal center across hover/show/hide states. */
+  .back-to-top{
+    position:fixed;
+    bottom:calc(var(--marquee-h) + 16px);
+    left:50%;
+    z-index:60;
+    width:52px;height:52px;border-radius:50%;
+    background:var(--gold);color:var(--bg);
+    border:0;cursor:pointer;
+    display:grid;place-items:center;
+    font-family:var(--font-mono);font-size:22px;font-weight:600;line-height:1;
+    opacity:0;transform:translate(-50%, 24px) scale(.85);
+    transition:opacity .4s ease,transform .4s cubic-bezier(.2,.8,.2,1),background .25s,box-shadow .25s;
+    pointer-events:none;
+    box-shadow:0 8px 24px rgba(212,165,116,.25);
+  }
+  /* Visible state — semi-transparent at rest so it doesn't dominate the
+     reading area, returns to full opacity on hover for confident interaction.
+     A gentle 6px upward bounce loop (mirroring the hero's "Scroll" cue,
+     direction-inverted) draws the eye to the button. The 0.4s animation
+     delay lets the entry transition (hidden → show) finish first. */
+  .back-to-top.show{
+    opacity:.55;
+    transform:translate(-50%, 0) scale(1);
+    pointer-events:auto;
+    animation:backTopBounce 2s ease-in-out .4s infinite;
+  }
+  /* Hover stops the bounce and locks in the hover transform — the user is
+     focused on the button, no need to keep distracting them with motion. */
+  .back-to-top.show:hover{
+    opacity:1;
+    background:var(--gold-bright);
+    transform:translate(-50%, -4px) scale(1.08);
+    box-shadow:0 14px 36px rgba(212,165,116,.45);
+    animation:none;
+  }
+  @keyframes backTopBounce{
+    0%,100%{transform:translate(-50%, 0) scale(1)}
+    50%{transform:translate(-50%, -9px) scale(1)}
+  }
+  @media (max-width:720px){
+    .back-to-top{bottom:calc(var(--marquee-h) + 12px);width:44px;height:44px;font-size:18px}
+  }
 
-            /* Canvas hero background — circuit board animation */
-            header.masthead {
-                position: relative;
-                overflow: hidden;
-            }
-            #circuit-board {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 1;
-                pointer-events: none;
-            }
-            header.masthead > .container {
-                position: relative;
-                z-index: 10;
-            }
+  /* ============================================================
+     Top bar
+     ============================================================ */
+  .topbar{
+    position:fixed;top:0;left:0;right:0;z-index:80;
+    /* Fluid padding so the bar shrinks smoothly down to small phones */
+    padding:clamp(14px, 2.5vw, 22px) clamp(20px, 5vw, 64px);
+    display:flex;align-items:center;justify-content:space-between;gap:clamp(12px, 2vw, 32px);
+    background:linear-gradient(180deg, rgba(10,6,4,.85) 0%, rgba(10,6,4,0) 100%);
+    transition:transform .35s ease, background .25s ease;
+  }
+  .topbar.is-hidden{transform:translateY(-110%)}
+  .topbar.is-solid{background:rgba(10,6,4,.92);backdrop-filter:saturate(140%) blur(12px)}
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+  .brand-mark{
+    width:40px;height:40px;display:block;
+    transition:transform .6s cubic-bezier(.2,.8,.2,1);
+  }
+  .brand:hover .brand-mark{transform:rotate(360deg)}
+  .brand-name{font-family:var(--font-mono);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)}
+  .brand-name b{color:var(--text);font-weight:500}
+  .topnav{display:flex;gap:28px;font-family:var(--font-mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+  .topnav a{color:var(--mute);position:relative}
+  .topnav a::after{
+    content:'';position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--gold);
+    transform:scaleX(0);transform-origin:right;transition:transform .35s cubic-bezier(.2,.8,.2,1);
+  }
+  .topnav a:hover{color:var(--text)}
+  .topnav a:hover::after{transform:scaleX(1);transform-origin:left}
+  .lang{
+    display:inline-flex;align-items:center;gap:0;
+    border:1px solid var(--rule-strong);border-radius:999px;padding:3px;background:rgba(0,0,0,.3);
+  }
+  .lang button{
+    border:0;background:transparent;cursor:pointer;
+    padding:5px 12px;border-radius:999px;
+    font-size:13.5px;letter-spacing:.04em;color:var(--mute);
+    transition:background .25s,color .25s;
+  }
+  .lang button.active{background:var(--gold);color:var(--bg);font-weight:500}
+  .lang button:hover:not(.active){color:var(--text)}
+  .lang .ar,.lang .ku{font-family:var(--font-arabic);font-size:15px}
 
-            /* Hero text: subtle transparency to blend with the canvas animation */
-            .masthead-subheading,
-            .masthead-heading {
-                opacity: 0.5;
-            }
-        </style>
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" href="#page-top" style="color: #fff; font-weight: 700; font-size: 1.5rem; letter-spacing: 1px;"><img src="assets/img/logo-animated-light.svg" alt="Saryas Jaf logo" style="height: 45px; width: 45px; margin-right: 12px;" />SARYAS JAF</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="assets/saryas-jaf-resume.pdf" download="Saryas-Jaf-Resume.pdf">Resume <i class="fas fa-download ms-1" style="font-size: 0.85em;"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <canvas id="circuit-board" aria-hidden="true"></canvas>
-            <div class="container">
-                <div class="masthead-subheading" data-aos="fade-down" data-aos-duration="800">Computer Engineer</div>
-                <h1 class="masthead-heading text-uppercase" id="hero-heading">Building Solutions Where Hardware Meets Software</h1>
-                <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="800" style="color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 720px; margin: 0 auto 2rem auto;">Helping businesses with IT infrastructure, security systems, IoT solutions, and custom electronics.</p>
-                <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
-                    <a class="btn btn-primary btn-xl text-uppercase mx-2 mb-2" href="#services">Explore Services</a>
-                    <a class="btn btn-outline-light btn-xl text-uppercase mx-2 mb-2" href="#contact">Start a Project</a>
-                </div>
-            </div>
-        </header>
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center" data-aos="fade-up">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">What I help businesses build, secure, and integrate.</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4 mb-5" data-aos="fade-up" data-aos-delay="100">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shield-halved fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">IT &amp; Security Systems</h4>
-                        <p class="text-muted">End-to-end IT support, network setup, and physical security. CCTV installation, access control systems, and the troubleshooting expertise from 8+ years in the field.</p>
-                    </div>
-                    <div class="col-md-4 mb-5" data-aos="fade-up" data-aos-delay="200">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-wifi fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">IoT Solutions</h4>
-                        <p class="text-muted">Connected devices that monitor, automate, and report. Built with Arduino, Raspberry Pi, and industry-standard platforms.</p>
-                    </div>
-                    <div class="col-md-4 mb-5" data-aos="fade-up" data-aos-delay="300">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-microchip fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Electronics &amp; PCB Design</h4>
-                        <p class="text-muted">Custom circuit boards from schematic to working prototype. Plus troubleshooting and repair of existing electronics.</p>
-                    </div>
-                    <div class="col-md-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-globe fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Development</h4>
-                        <p class="text-muted">Modern, responsive websites that work on every device. Business sites to interactive web applications.</p>
-                    </div>
-                    <div class="col-md-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="200">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-mobile-screen fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Mobile Applications</h4>
-                        <p class="text-muted">Apps that solve real problems for real users. Clean interfaces, smooth performance.</p>
-                    </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-pen-ruler fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">UI/UX Design</h4>
-                        <p class="text-muted">Interfaces that look professional and feel natural to use, for web and mobile.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center" data-aos="fade-up">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Selected case studies from real engineering work.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-duration="900">
-                        <!-- Case Study 1: Industrial Security Infrastructure -->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/case-1-photo.jpg" alt="Industrial CCTV camera and access control system at an oil and gas facility" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Industrial Security Infrastructure</div>
-                                <div class="portfolio-caption-subheading text-muted">CCTV &amp; Access Control · Oil &amp; Gas Sector</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-duration="900">
-                        <!-- Case Study 2: IT Operations & Strategic Integration -->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="IT operations and infrastructure" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">IT Operations &amp; Strategic Integration</div>
-                                <div class="portfolio-caption-subheading text-muted">IT Engineering · Team Leadership</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center" data-aos="fade-up">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Computer Engineer based in Erbil, Iraq. 8+ years across IT engineering, security systems, and team leadership — bridging hardware and software solutions.</h3>
-                </div>
-                <!-- Animated stat counters -->
-                <div class="row stats-row" data-aos="fade-up">
-                    <div class="col-md-4 stat-item">
-                        <div class="stat-number" data-target="8" data-suffix="+">0</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="col-md-4 stat-item">
-                        <div class="stat-number" data-target="14">0</div>
-                        <div class="stat-label">People Lead</div>
-                    </div>
-                    <div class="col-md-4 stat-item">
-                        <div class="stat-number" data-target="6">0</div>
-                        <div class="stat-label">Service Areas</div>
-                    </div>
-                </div>
-                <ul class="timeline">
-                    <li data-aos="fade-up">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="IT Engineer at Oak Leaf Company" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2025 – Present</h4>
-                                <h4 class="subheading">IT Engineer · Oak Leaf Company</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Leading IT engineering operations: software integrations, end-user training, vendor management, and access control compliance. Bridging technical execution with business strategy.</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted" data-aos="fade-up">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="Branch Manager at Oak Leaf Company" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2021 – 2025</h4>
-                                <h4 class="subheading">Branch Manager · Oak Leaf Company</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lead a team of 14 employees. Oversaw daily operations, ensured compliance with company policies, and aligned branch goals with corporate strategy. Coached team members and reported to senior management on performance.</p></div>
-                        </div>
-                    </li>
-                    <li data-aos="fade-up">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="ACS and CCTV Engineer" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2019 – 2021</h4>
-                                <h4 class="subheading">ACS &amp; CCTV Engineer · Oil &amp; Gas Field</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Configured and maintained CCTV systems and access control infrastructure at a critical-infrastructure oil &amp; gas facility. Conducted inspections, integrated security solutions across existing systems, and trained on-site staff.</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted" data-aos="fade-up">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="IT Support at Local IT company" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2017 – 2018</h4>
-                                <h4 class="subheading">IT Support · Local IT company</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Hands-on technical support: troubleshooting hardware and software issues, installing and configuring operating systems, performing system updates and backups. Participated in IT audits and compliance checks.</p></div>
-                        </div>
-                    </li>
-                    <li data-aos="fade-up">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/5.jpg" alt="B.Sc. Computer Engineering at Ishik University" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2012 – 2016</h4>
-                                <h4 class="subheading">B.Sc. Computer Engineering · Ishik University, Erbil</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Bachelor of Science in Computer Engineering. Participated in the International Engineering Conference (IEC 2016) and various professional development seminars including TEDxNishtiman.</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted" data-aos="zoom-in">
-                        <div class="timeline-image">
-                            <h4>
-                                Open
-                                <br />
-                                For New
-                                <br />
-                                Projects!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- (Team and Clients sections removed - solo practitioner) -->
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center" data-aos="fade-up">
-                    <h2 class="section-heading text-uppercase" style="color: #f5e3c0 !important;">Get In Touch</h2>
-                    <h3 class="section-subheading text-muted" style="color: #f5e3c0 !important;">Have a project in mind? Let's talk.</h3>
-                </div>
-                <!-- Direct contact options - displayed prominently -->
-                <div class="row text-center mb-5">
-                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                        <a href="tel:+9647701943308" style="color: #fff; text-decoration: none;">
-                            <i class="fas fa-phone fa-2x mb-2" style="color: #d4a574;"></i>
-                            <h5 class="text-uppercase" style="color: #f5e3c0;">Phone</h5>
-                            <p style="color: #f5e3c0;">+964 770 194 3308</p>
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                        <a href="https://wa.me/9647701943308" target="_blank" rel="noopener" style="color: #fff; text-decoration: none;">
-                            <i class="fab fa-whatsapp fa-2x mb-2" style="color: #d4a574;"></i>
-                            <h5 class="text-uppercase" style="color: #f5e3c0;">WhatsApp</h5>
-                            <p style="color: #f5e3c0;">+964 770 194 3308</p>
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                        <a href="mailto:saryas.jaf9@gmail.com" style="color: #fff; text-decoration: none;">
-                            <i class="fas fa-envelope fa-2x mb-2" style="color: #d4a574;"></i>
-                            <h5 class="text-uppercase" style="color: #f5e3c0;">Email</h5>
-                            <p style="color: #f5e3c0;">saryas.jaf9@gmail.com</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="text-center mb-4" data-aos="fade-up">
-                    <p style="color: rgba(255,255,255,0.85);"><i class="fas fa-location-dot me-2" style="color: #d4a574;"></i>Erbil, Iraq</p>
-                </div>
-                <!-- Contact form (Formspree-handled, AJAX-submitted) -->
-                <form id="contactForm" action="https://formspree.io/f/xaqagzjk" method="POST" data-aos="fade-up">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" name="name" type="text" placeholder="Your Name *" required />
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" name="email" type="email" placeholder="Your Email *" required />
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Your Phone *" required />
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" name="message" placeholder="Tell me about your project *" required></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Submit success message-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Thanks for reaching out!</div>
-                            I'll get back to you within 24 hours.
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <div class="d-none" id="submitErrorMessage">
-                        <div class="text-center text-danger mb-3">
-                            Something went wrong. Please try again, or email me directly at <a href="mailto:saryas.jaf9@gmail.com" style="color: #f5e3c0; text-decoration: underline;">saryas.jaf9@gmail.com</a>.
-                        </div>
-                    </div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
-                </form>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Saryas Jaf 2026</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="mailto:saryas.jaf9@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="https://wa.me/9647701943308" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="tel:+9647701943308" aria-label="Phone"><i class="fas fa-phone"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <span class="text-muted">Erbil, Iraq</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Portfolio Modals-->
-        <!-- Case Study 1: Industrial Security Infrastructure -->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <h2 class="text-uppercase">Industrial Security Infrastructure</h2>
-                                    <p class="item-intro text-muted">CCTV &amp; Access Control deployment at a critical-infrastructure oil &amp; gas facility.</p>
-                                    <img class="img-fluid d-block mx-auto mb-4" src="assets/img/portfolio/case-1-photo.jpg" alt="Industrial CCTV camera and access control system at an oil and gas facility" style="border-radius: 8px;" />
-                                    <p>Designed, configured, and maintained CCTV systems and Access Control Systems (ACS) at an oil &amp; gas operator's facility. Conducted regular inspections, integrated security solutions into existing infrastructure, and trained on-site staff on system operation and maintenance.</p>
-                                    <h4 class="mt-4 mb-3" style="text-align: left;">System architecture</h4>
-                                    <p class="text-muted" style="text-align: left;">Three-tier integrated security architecture, from field devices through central infrastructure to the control room:</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/case-1-architecture.svg" alt="System architecture diagram" style="max-width: 100%; background: #fff; padding: 1.5rem; border-radius: 8px;" />
-                                    <h4 class="mt-4 mb-3" style="text-align: left;">Key contributions</h4>
-                                    <ul style="text-align: left; padding-left: 1.5rem;">
-                                        <li>Configured and maintained CCTV systems for 24/7 surveillance reliability</li>
-                                        <li>Installed and managed access control systems across multiple zones</li>
-                                        <li>Provided on-site and remote technical support</li>
-                                        <li>Trained staff on proper system operation and maintenance</li>
-                                        <li>Generated incident reports and recommended security upgrades</li>
-                                    </ul>
-                                    <ul class="list-inline mt-4">
-                                        <li><strong>Client:</strong> Oil &amp; Gas Field (via Oak Leaf Company)</li>
-                                        <li><strong>Period:</strong> 2019 – 2021</li>
-                                        <li><strong>Role:</strong> ACS &amp; CCTV Engineer</li>
-                                        <li><strong>Systems:</strong> CCTV hardware, ACS controllers, network infrastructure</li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Case Study
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  /* ============================================================
+     Mobile hamburger button — hidden on desktop, shown ≤880px.
+     44×44 hit area for thumb-friendly tapping (WCAG 2.5.5 / Apple HIG).
+     Three bars animate into an X when the menu opens. */
+  .nav-toggle{
+    display:none;
+    position:relative;
+    width:44px;height:44px;
+    background:transparent;border:0;padding:0;cursor:pointer;
+    flex-shrink:0;
+    z-index:90;
+  }
+  .nav-toggle span{
+    position:absolute;left:10px;right:10px;height:1.5px;
+    background:var(--text);border-radius:1px;
+    transition:top .3s cubic-bezier(.2,.8,.2,1), transform .3s cubic-bezier(.2,.8,.2,1), opacity .2s ease;
+  }
+  .nav-toggle span:nth-child(1){top:15px}
+  .nav-toggle span:nth-child(2){top:21px}
+  .nav-toggle span:nth-child(3){top:27px}
+  /* Open state — top + bottom bars converge and rotate into X, middle fades */
+  .nav-toggle.is-open span:nth-child(1){top:21px;transform:rotate(45deg)}
+  .nav-toggle.is-open span:nth-child(2){opacity:0}
+  .nav-toggle.is-open span:nth-child(3){top:21px;transform:rotate(-45deg)}
+  .nav-toggle:hover span{background:var(--gold)}
+
+  /* ============================================================
+     Mobile nav overlay — full-screen menu that fades in on hamburger tap.
+     Uses display-font + large italic sizing so it feels like a hero
+     experience, not a corporate dropdown. */
+  .mobile-nav{
+    position:fixed;inset:0;z-index:78;
+    background:rgba(10,6,4,.97);
+    backdrop-filter:blur(20px) saturate(140%);
+    -webkit-backdrop-filter:blur(20px) saturate(140%);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:clamp(24px, 5vh, 40px);
+    opacity:0;pointer-events:none;
+    transition:opacity .35s cubic-bezier(.2,.8,.2,1);
+  }
+  .mobile-nav.is-open{opacity:1;pointer-events:auto}
+  .mobile-nav a{
+    font-family:var(--font-display);font-style:italic;font-weight:500;
+    font-size:clamp(36px, 11vw, 64px);
+    color:var(--text);text-decoration:none;letter-spacing:-.02em;
+    line-height:1;
+    transform:translateY(20px);opacity:0;
+    transition:color .25s, transform .5s cubic-bezier(.2,.8,.2,1), opacity .5s ease;
+  }
+  /* In-menu language switcher — slightly larger tap targets than the topbar
+     copy since it's the primary lang access point on mobile. */
+  .mobile-nav .lang{
+    transform:translateY(20px);opacity:0;
+    transition:transform .5s cubic-bezier(.2,.8,.2,1), opacity .5s ease;
+  }
+  .mobile-nav .lang button{padding:7px 16px;font-size:14px}
+  .mobile-nav .lang .ar,
+  .mobile-nav .lang .ku{font-size:16px}
+  /* Stagger: lang switcher fades in first, then the nav links cascade.
+     `nth-of-type` is used (not `nth-child`) because the `.lang` div now sits
+     before the anchors as the first child of .mobile-nav. */
+  .mobile-nav.is-open .lang{transform:translateY(0);opacity:1;transition-delay:.05s}
+  .mobile-nav.is-open a{transform:translateY(0);opacity:1}
+  .mobile-nav.is-open a:nth-of-type(1){transition-delay:.14s}
+  .mobile-nav.is-open a:nth-of-type(2){transition-delay:.20s}
+  .mobile-nav.is-open a:nth-of-type(3){transition-delay:.26s}
+  .mobile-nav.is-open a:nth-of-type(4){transition-delay:.32s}
+  .mobile-nav a:hover, .mobile-nav a:focus{color:var(--gold);outline:none}
+  /* In Arabic / Kurdish, switch to the Arabic display weight (the italic Latin
+     font doesn't carry Arabic glyphs). */
+  html[dir="rtl"] .mobile-nav a{
+    font-family:var(--font-arabic);font-style:normal;font-weight:600;
+  }
+
+  @media (max-width:880px){
+    .topnav{display:none}
+    .nav-toggle{display:block}
+    /* Hide the topbar's lang group on mobile — its replacement lives at the
+       top of the mobile-nav overlay. Both stay in sync via the JS, so when
+       the user resizes back up to desktop the topbar copy reflects state. */
+    .topbar > .lang{display:none}
+  }
+
+  /* ============================================================
+     §01 HERO — scrolls naturally with the page (no parallax).
+     Sized to fit above the always-visible fixed marquee.
+     ============================================================ */
+  .hero{
+    position:relative;
+    width:100%;
+    height:calc(100vh - var(--marquee-h));
+    overflow:hidden;background:var(--bg);
+    z-index:0;
+  }
+  .hero-bg{
+    position:absolute;inset:0;
+    background:
+      radial-gradient(ellipse 120% 70% at 70% 110%, rgba(212,165,116,.18) 0%, transparent 55%),
+      radial-gradient(ellipse 80% 50% at 20% 0%, rgba(201,104,42,.10) 0%, transparent 50%),
+      linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+  }
+
+  /* Hero photograph — fixed to viewport so the image stays anchored while
+     the text content scrolls past it (parallax-photo effect). The image is
+     only painted within the hero-image div's bounds, so once the hero scrolls
+     off-screen, the photo disappears cleanly. */
+  .hero-image{
+    position:absolute;inset:0;
+    background-image:url("assets/img/hero-bg.png");
+    background-size:contain;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-color:var(--bg);
+    z-index:0;
+  }
+  /* RTL: swap to the pre-flipped image file instead of using transform:scaleX(-1).
+     Any transform on the element breaks `background-attachment: fixed` (browsers
+     tie the bg to the transformed coordinate space), so a separate flipped file
+     is the only way to keep BOTH the visual mirror AND the parallax-fix behavior
+     in Arabic / Kurdish. */
+  html[dir="rtl"] .hero-image{
+    background-image:url("assets/img/hero-bg-rtl.png");
+  }
+
+  /* Overlay gradient — preserves the baked-in UI overlay at the bottom of the photo,
+     darkens the left zone for headline readability, light top vignette,
+     and a strong bottom fade so the photo dissolves into solid bg before the marquee.
+     The bottom fade is critical — without it, the photo's lower content shows a
+     bright/color band that gets "eaten" by the scrolling wrap and reads as a
+     section rising up out of the marquee. */
+  .hero-overlay{
+    position:absolute;inset:0;pointer-events:none;z-index:1;
+    background:
+      /* Bottom → up fade to solid bg (covers bottom 18% of hero) */
+      linear-gradient(0deg, var(--bg) 0%, var(--bg) 6%, rgba(10,6,4,0) 18%),
+      /* Left → right horizontal fade for typography zone (lighter than before — image has natural dark left) */
+      linear-gradient(90deg, rgba(10,6,4,0.78) 0%, rgba(10,6,4,0.55) 26%, rgba(10,6,4,0.22) 50%, rgba(10,6,4,0.04) 70%, rgba(10,6,4,0) 84%),
+      /* Subtle top vignette */
+      linear-gradient(180deg, rgba(10,6,4,0.30) 0%, transparent 20%);
+  }
+  /* RTL: flip horizontal gradient so the dark typography zone is on the RIGHT (matches RTL text alignment + flipped image) */
+  html[dir="rtl"] .hero-overlay{
+    background:
+      linear-gradient(0deg, var(--bg) 0%, var(--bg) 6%, rgba(10,6,4,0) 18%),
+      linear-gradient(270deg, rgba(10,6,4,0.78) 0%, rgba(10,6,4,0.55) 26%, rgba(10,6,4,0.22) 50%, rgba(10,6,4,0.04) 70%, rgba(10,6,4,0) 84%),
+      linear-gradient(180deg, rgba(10,6,4,0.30) 0%, transparent 20%);
+  }
+  @media (max-width:880px){
+    /* Mobile: swap to the purpose-shot 2:3 portrait photo and use
+       `background-attachment: scroll` (NOT fixed). iOS Safari has a known
+       bug where fixed+cover calculates against the full screen including the
+       address bar area, scaling the image far larger than the viewport and
+       showing only the dark center crop ("zoomed in" effect). With scroll
+       attachment, the image is sized against the .hero-image element itself,
+       so the full portrait composition is preserved. Trade-off: no
+       parallax-fix on mobile — image scrolls with the hero. */
+    .hero-image{
+      background-image:url("assets/img/hero-bg-mobile.jpg");
+      background-attachment:scroll;
+      background-size:cover;
+      background-position:center center;
+    }
+    /* RTL mobile uses the pre-flipped portrait file. */
+    html[dir="rtl"] .hero-image{
+      background-image:url("assets/img/hero-bg-mobile-rtl.jpg");
+    }
+    .hero-overlay{
+      background:
+        linear-gradient(180deg, rgba(10,6,4,0.55) 0%, rgba(10,6,4,0.72) 55%, rgba(10,6,4,0.88) 100%);
+    }
+  }
+  .hero-grid{
+    position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background-image:
+      linear-gradient(rgba(212,165,116,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212,165,116,.04) 1px, transparent 1px);
+    background-size:80px 80px;
+    mask-image:radial-gradient(ellipse at center, #000 30%, transparent 75%);
+    -webkit-mask-image:radial-gradient(ellipse at center, #000 30%, transparent 75%);
+  }
+  @keyframes gridDrift{
+    0%{background-position:0 0}
+    100%{background-position:80px 0}
+  }
+  .hero-particles{
+    position:absolute;inset:0;pointer-events:none;
+    background-image:
+      radial-gradient(2px 2px at 8% 22%, rgba(245,227,192,.7), transparent 40%),
+      radial-gradient(1.5px 1.5px at 18% 68%, rgba(245,227,192,.6), transparent 40%),
+      radial-gradient(2px 2px at 30% 12%, rgba(212,165,116,.85), transparent 40%),
+      radial-gradient(1px 1px at 42% 88%, rgba(245,227,192,.55), transparent 40%),
+      radial-gradient(2.5px 2.5px at 54% 32%, rgba(245,185,74,.95), transparent 40%),
+      radial-gradient(1px 1px at 64% 72%, rgba(245,227,192,.55), transparent 40%),
+      radial-gradient(1.5px 1.5px at 76% 18%, rgba(212,165,116,.78), transparent 40%),
+      radial-gradient(2.5px 2.5px at 84% 58%, rgba(245,185,74,.75), transparent 40%),
+      radial-gradient(1px 1px at 92% 28%, rgba(245,227,192,.55), transparent 40%),
+      radial-gradient(1.5px 1.5px at 12% 82%, rgba(212,165,116,.6), transparent 40%),
+      radial-gradient(2px 2px at 38% 48%, rgba(245,227,192,.5), transparent 40%),
+      radial-gradient(1px 1px at 58% 8%, rgba(245,185,74,.65), transparent 40%),
+      radial-gradient(2px 2px at 70% 92%, rgba(212,165,116,.55), transparent 40%),
+      radial-gradient(1.5px 1.5px at 4% 56%, rgba(245,227,192,.6), transparent 40%);
+    animation: particlesDrift 24s ease-in-out infinite alternate;
+  }
+  @keyframes particlesDrift{
+    0%{transform:translate(0,0)}
+    100%{transform:translate(20px,0)}
+  }
+  .hero-content{
+    position:absolute;inset:0;z-index:2;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    max-width:1280px;margin:0 auto;
+    /* Bottom padding scales with viewport height so the headline stack
+       sits comfortably above the marquee on any screen size */
+    padding-block:0 clamp(72px, 12vh, 140px);
+    /* Desktop design intentionally keeps content close to the left edge
+       of the centered 1280 container (8px). Mobile gets a comfortable
+       edge gutter via the @media override below. */
+    padding-inline-start:8px;
+    padding-inline-end:64px;
+  }
+  .hero-meta{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--mute);margin-bottom:28px;
+    display:flex;align-items:center;gap:14px;
+    opacity:0;transform:translateY(8px);
+    animation: heroFadeUp .9s ease-out .2s forwards;
+  }
+  .hero-meta::before{
+    content:'';display:inline-block;width:0;height:1px;background:var(--gold);
+    animation: lineDraw 1s cubic-bezier(.2,.8,.2,1) .35s forwards;
+  }
+  @keyframes lineDraw{ to{width:34px} }
+
+  .hero h1{
+    font-family:var(--font-display);font-style:italic;font-weight:500;
+    font-size:clamp(56px,9vw,144px);line-height:.96;letter-spacing:-.025em;
+    color:var(--text);margin:0 0 28px;max-width:14ch;
+    text-wrap:balance;
+  }
+  .hero h1 .accent{font-style:normal;color:var(--gold-bright);font-weight:600}
+
+  /* word-by-word reveal */
+  .split-word{display:inline-block;overflow:hidden;padding:0 .04em .12em}
+  .split-word > span{
+    display:inline-block;transform:translateY(110%);
+    animation: wordRise 1.1s cubic-bezier(.2,.8,.2,1) forwards;
+    animation-delay:var(--d, 0s);
+  }
+  @keyframes wordRise{ to{transform:translateY(0)} }
+
+  .hero-sub{
+    font-family:var(--font-body);font-size:clamp(15px,1.4vw,18px);font-weight:400;
+    color:var(--text-2);max-width:46ch;margin:0 0 44px;line-height:1.6;
+    opacity:0;transform:translateY(12px);
+    animation: heroFadeUp 1s ease-out 1.2s forwards;
+  }
+  .hero-cta{
+    display:flex;gap:14px;flex-wrap:wrap;
+    opacity:0;transform:translateY(12px);
+    animation: heroFadeUp 1s ease-out 1.4s forwards;
+  }
+  @keyframes heroFadeUp{ to{opacity:1;transform:translateY(0)} }
+
+  .btn-primary{
+    display:inline-flex;align-items:center;gap:12px;
+    padding:16px 28px;background:var(--gold);color:var(--bg);
+    font-family:var(--font-body);font-size:14px;font-weight:600;letter-spacing:.04em;
+    border:0;border-radius:2px;cursor:pointer;text-decoration:none;
+    transition:background .25s,box-shadow .35s,transform .35s cubic-bezier(.2,.8,.2,1);
+    box-shadow:0 0 0 0 rgba(212,165,116,.4);
+    will-change:transform;
+  }
+  .btn-primary:hover{background:var(--gold-bright);color:var(--bg);box-shadow:0 12px 40px rgba(212,165,116,.35);transform:scale(1.08)}
+  .btn-secondary{
+    display:inline-flex;align-items:center;gap:12px;
+    padding:16px 28px;
+    background:rgba(245,227,192,0.10);
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+    color:var(--text);
+    font-family:var(--font-body);font-size:14px;font-weight:500;letter-spacing:.04em;
+    border:1px solid rgba(245,227,192,0.32);border-radius:2px;cursor:pointer;text-decoration:none;
+    transition:background .25s,border-color .25s,transform .35s cubic-bezier(.2,.8,.2,1);
+    will-change:transform;
+  }
+  .btn-secondary:hover{background:rgba(245,227,192,0.18);border-color:var(--gold);color:var(--text);transform:scale(1.08)}
+  .btn-arrow{transition:transform .25s}
+  .btn-primary:hover .btn-arrow,.btn-secondary:hover .btn-arrow{transform:translateX(4px)}
+
+  .hero-cue{
+    position:absolute;bottom:36px;left:50%;transform:translateX(-50%);
+    font-family:var(--font-mono);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--mute);
+    z-index:2;animation: cueBounce 2s ease-in-out infinite;
+  }
+  .hero-cue::after{
+    content:'↓';display:block;text-align:center;margin-top:6px;font-size:16px;color:var(--gold);
+  }
+  @keyframes cueBounce{
+    0%,100%{transform:translateX(-50%) translateY(0)}
+    50%{transform:translateX(-50%) translateY(9px)}
+  }
+  @media (max-width:880px){
+    .hero-content{
+      padding-inline-start:clamp(20px, 5vw, 32px);
+      padding-inline-end:clamp(20px, 5vw, 32px);
+    }
+    .hero h1{font-size:clamp(44px,11vw,72px)}
+  }
+
+  /* ============================================================
+     Marquee strip
+     ============================================================ */
+  .marquee{
+    overflow:hidden;
+    padding:6px 0;background:var(--bg);
+    line-height:1;
+    /* Fixed at bottom of viewport — always visible regardless of scroll */
+    position:fixed;
+    bottom:0;left:0;width:100%;
+    height:var(--marquee-h);
+    box-sizing:border-box;
+    z-index:55;
+  }
+  .marquee-track{align-items:center}
+  /* Hero is in normal flow now (height: calc(100vh - var(--marquee-h))),
+     so the wrap follows directly — no margin-top or padding-top buffer needed. */
+  .marquee::before, .marquee::after{
+    content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none;
+  }
+  .marquee::before{left:0;background:linear-gradient(90deg,var(--bg),transparent)}
+  .marquee::after{right:0;background:linear-gradient(270deg,var(--bg),transparent)}
+  .marquee-track{
+    display:flex;gap:0;animation: marqueeRun 38s linear infinite;
+    width:max-content;
+  }
+  .marquee-track > span{
+    font-family:var(--font-mono);font-size:13px;letter-spacing:.22em;color:var(--gold);
+    text-transform:uppercase;padding:0 32px;flex-shrink:0;
+    display:inline-flex;align-items:center;gap:32px;
+  }
+  .marquee-track > span::after{
+    content:'◆';color:var(--copper);font-size:10px;opacity:.6;
+  }
+  @keyframes marqueeRun{
+    from{transform:translateX(0)}
+    to{transform:translateX(-50%)}
+  }
+
+  /* ============================================================
+     Section scaffold
+     ============================================================ */
+  /* Fluid vertical padding: 64px on small phones → 140px on desktop.
+     Scales linearly with viewport width so no breakpoint jumps. */
+  section.block{padding:clamp(64px, 12vw, 140px) 0;position:relative}
+  .sec-label{
+    display:flex;align-items:center;gap:14px;margin-bottom:32px;
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);
+  }
+  .sec-label::before{
+    content:'';display:inline-block;width:0;height:1px;background:var(--gold);
+    transition:width 1s cubic-bezier(.2,.8,.2,1) .15s;
+  }
+  .reveal.in .sec-label::before{width:34px}
+
+  .sec-num-badge{
+    display:inline-block;
+    transform:scale(0.4);opacity:0;
+    transition:transform .8s cubic-bezier(.34,1.56,.64,1) .2s, opacity .6s ease .2s;
+  }
+  .reveal.in .sec-num-badge{transform:scale(1);opacity:1}
+
+  .sec-title-wrap{overflow:hidden}
+  .sec-title{
+    font-family:var(--font-display);font-weight:500;font-style:italic;
+    font-size:clamp(48px,6vw,88px);line-height:1;letter-spacing:-.02em;
+    color:var(--text);margin:0 0 20px;text-wrap:balance;
+    transform:translateY(110%);
+    transition:transform 1.1s cubic-bezier(.2,.8,.2,1) .25s;
+  }
+  .reveal.in .sec-title{transform:translateY(0)}
+  .sec-title .accent{font-style:normal;color:var(--gold);font-weight:600}
+  .sec-deck{
+    font-family:var(--font-body);font-size:clamp(16px,1.3vw,19px);color:var(--text-2);
+    max-width:54ch;margin:0 0 80px;line-height:1.55;
+    opacity:0;transform:translateY(20px);
+    transition:opacity .9s ease-out .55s,transform .9s ease-out .55s;
+  }
+  .reveal.in .sec-deck{opacity:1;transform:translateY(0)}
+
+  /* ============================================================
+     §02 PRACTICE
+     ============================================================ */
+  #practice{
+    position:relative;
+  }
+  #practice::before{
+    content:'';position:absolute;inset:0;pointer-events:none;opacity:.35;
+    background-image:radial-gradient(circle, rgba(212,165,116,.15) 1px, transparent 1px);
+    background-size:32px 32px;
+    mask-image:radial-gradient(ellipse at center, #000 20%, transparent 80%);
+    -webkit-mask-image:radial-gradient(ellipse at center, #000 20%, transparent 80%);
+    animation: dotsDrift 60s linear infinite;
+  }
+  @keyframes dotsDrift{
+    0%{background-position:0 0}
+    100%{background-position:32px 32px}
+  }
+  #practice .wrap-inner, #practice > .reveal, #practice .practice-wrap{position:relative;z-index:1}
+
+  .practice-wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(40px, 7vw, 96px);align-items:start}
+  .practice-primary .lead-num{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:18px;display:block;
+  }
+  .practice-primary h3{
+    font-family:var(--font-display);font-weight:500;font-style:italic;
+    font-size:clamp(36px,4vw,56px);line-height:1.05;letter-spacing:-.02em;
+    margin:0 0 24px;color:var(--text);
+  }
+  .practice-primary p{font-size:18px;color:var(--text-2);max-width:48ch;line-height:1.6;margin:0 0 16px}
+  .practice-primary .bullet-list{list-style:none;padding:0;margin:32px 0 0;display:grid;gap:14px}
+  .practice-primary .bullet-list li{
+    padding-inline-start:24px;position:relative;color:var(--text-2);font-size:15px;
+    opacity:0;transform:translateX(-12px);
+    transition:opacity .6s ease,transform .6s ease;
+  }
+  /* RTL: slide-in animation flips direction so items still reveal from the
+     row's start edge (right side in Arabic/Kurdish) rather than from physical left. */
+  html[dir="rtl"] .practice-primary .bullet-list li{transform:translateX(12px)}
+  .reveal.in .practice-primary .bullet-list li{opacity:1;transform:translateX(0)}
+  .reveal.in .practice-primary .bullet-list li:nth-child(1){transition-delay:.7s}
+  .reveal.in .practice-primary .bullet-list li:nth-child(2){transition-delay:.85s}
+  .reveal.in .practice-primary .bullet-list li:nth-child(3){transition-delay:1s}
+  .reveal.in .practice-primary .bullet-list li:nth-child(4){transition-delay:1.15s}
+  .practice-primary .bullet-list li::before{
+    content:'';position:absolute;inset-inline-start:0;top:.7em;width:14px;height:1px;background:var(--gold);
+  }
+
+  .practice-side{position:sticky;top:100px}
+  .practice-side .label{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--mute);text-transform:uppercase;margin-bottom:24px;display:block;
+  }
+  .adj-list{list-style:none;margin:0;padding:0}
+  .adj-list li{
+    padding:22px 0;border-bottom:1px solid var(--rule);
+    display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;
+    /* Logical property so the hover shift flips with reading direction (LTR
+       shifts content right, RTL shifts content left — both push from the
+       row's START edge, which is where the name lives). */
+    transition:padding-inline-start .35s ease,background .35s ease;
+    position:relative;
+  }
+  .adj-list li::before{
+    content:'';position:absolute;inset-inline-start:0;top:50%;width:0;height:1px;background:var(--gold);
+    transform:translateY(-50%);transition:width .35s cubic-bezier(.2,.8,.2,1);
+  }
+  .adj-list li:hover{padding-inline-start:18px;background:rgba(245,227,192,.02)}
+  .adj-list li:hover::before{width:12px}
+  .adj-list li:first-child{border-top:1px solid var(--rule-strong)}
+  .adj-list .name{font-family:var(--font-display);font-weight:500;font-size:20px;color:var(--text)}
+  .adj-list .meta{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;color:var(--mute);text-transform:uppercase}
+
+  @media (max-width:880px){
+    .practice-wrap{grid-template-columns:1fr;gap:64px}
+    .practice-side{position:static}
+  }
+
+  /* ============================================================
+     §03 SELECTED WORK
+     ============================================================ */
+  .work-scene{
+    position:relative;
+    display:grid;grid-template-columns:1fr 1fr;gap:0;
+    margin-bottom:8px;min-height:560px;
+    background:var(--bg-2);
+    overflow:hidden;
+    transition:background .4s ease;
+    cursor:pointer;
+  }
+  .work-scene::after{
+    content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--gold);
+    transform:scaleX(0);transform-origin:left;transition:transform .9s cubic-bezier(.2,.8,.2,1);
+    z-index:3;
+  }
+  .work-scene:hover{background:var(--bg-elev)}
+  .work-scene:hover::after{transform:scaleX(1)}
+  .work-scene.flip{direction:rtl}
+  .work-scene.flip > *{direction:ltr}
+  .work-scene.flip:hover::after{transform-origin:right}
+
+  .work-image{
+    position:relative;overflow:hidden;background:#1a1410;
+  }
+  .work-image > div{
+    position:absolute;inset:0;
+    transition:transform 1s cubic-bezier(.2,.8,.2,1);
+    will-change:transform;
+  }
+  .work-scene:hover .work-image > div{transform:scale(1.06)}
+  /* Case study photographs. The dark `background-color` shows briefly while
+     the image loads (matches the rest of the dark palette). `cover` fills
+     the work-image div, `center` keeps the focal point of each composition
+     visible across viewport sizes. */
+  .work-image .ph-1,
+  .work-image .ph-2,
+  .work-image .ph-3{
+    background-color:var(--bg-2);
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+  }
+  .work-image .ph-1{background-image:url("assets/img/work-industrial-security.jpg")}
+  .work-image .ph-2{background-image:url("assets/img/work-it-operations.jpg")}
+  .work-image .ph-3{background-image:url("assets/img/work-hardware-support.jpg")}
+  /* Subtle dark overlay on photos so the surrounding UI gold accents
+     (sec-label, meta line, "Read the case study" link) maintain contrast
+     when they sit next to a busy photographic backdrop. */
+  .work-image .ph-1::after,
+  .work-image .ph-2::after,
+  .work-image .ph-3::after{
+    content:'';position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg, rgba(10,6,4,0) 0%, rgba(10,6,4,0) 60%, rgba(10,6,4,0.45) 100%);
+  }
+
+  .work-content{
+    padding:clamp(32px, 5vw, 64px) clamp(24px, 4vw, 56px);
+    display:flex;flex-direction:column;justify-content:center;gap:18px;
+    transition:transform .6s cubic-bezier(.2,.8,.2,1);
+  }
+  .work-scene:hover .work-content{transform:translateX(8px)}
+  .work-scene.flip:hover .work-content{transform:translateX(-8px)}
+  .work-content .meta{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;display:flex;gap:14px;align-items:center;
+  }
+  .work-content .meta::before{content:'';display:inline-block;width:24px;height:1px;background:var(--gold)}
+  .work-content h3{
+    font-family:var(--font-display);font-weight:500;font-style:italic;
+    font-size:clamp(32px,3.4vw,48px);line-height:1.05;letter-spacing:-.018em;
+    margin:0;color:var(--text);text-wrap:balance;
+  }
+  .work-content p{font-size:16.5px;color:var(--text-2);line-height:1.6;margin:0;max-width:42ch}
+
+  @media (max-width:880px){
+    .work-scene{grid-template-columns:1fr;min-height:0}
+    .work-scene.flip{direction:ltr}
+    .work-image{aspect-ratio:16/10}
+    .work-content{padding:40px 24px}
+  }
+
+  /* ============================================================
+     §04 ABOUT
+     ============================================================ */
+  .about-stage{display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(40px, 6vw, 80px);align-items:start}
+  .portrait-frame{
+    position:relative;aspect-ratio:4/5;
+    /* Real portrait photo. background-color shows briefly during image load
+       (matches the dark palette so no white flash). */
+    background-color:#0a0604;
+    background-image:url("assets/img/portrait-saryas.jpg");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    overflow:hidden;border:1px solid var(--rule);
+    transform:translateY(20px);opacity:0;
+    transition:transform 1.1s cubic-bezier(.2,.8,.2,1) .3s,opacity .9s ease-out .3s;
+  }
+  .reveal.in .portrait-frame{transform:translateY(0);opacity:1}
+  /* Subtle bottom-edge fade so the .portrait-tag ("NO. 001 · SELF · 2026")
+     stays readable over the photo without needing a hard background fill. */
+  .portrait-frame::after{
+    content:'';position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg, rgba(10,6,4,0) 60%, rgba(10,6,4,0.55) 100%);
+  }
+  .portrait-tag{
+    position:absolute;bottom:20px;left:20px;z-index:2;
+    font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;color:var(--mute);text-transform:uppercase;
+  }
+
+  .about-quote{
+    font-family:var(--font-display);font-style:italic;font-weight:500;
+    font-size:clamp(28px,3.2vw,42px);line-height:1.2;color:var(--text);
+    margin:0 0 36px;text-wrap:balance;letter-spacing:-.012em;
+    opacity:0;transform:translateY(20px);
+    transition:opacity .9s ease-out .5s,transform .9s ease-out .5s;
+  }
+  .reveal.in .about-quote{opacity:1;transform:translateY(0)}
+  .about-quote .accent{color:var(--gold)}
+  .about-bio p{font-size:17px;color:var(--text-2);line-height:1.65;margin:0 0 18px;max-width:54ch}
+  .about-cite{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--mute);text-transform:uppercase;margin-top:32px}
+
+  /* big stat number animation */
+  .stat-strip{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin:64px 0 0;
+    border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:36px 0;
+  }
+  .stat{display:flex;flex-direction:column;gap:6px}
+  .stat .num{
+    font-family:var(--font-display);font-style:italic;font-weight:500;
+    font-size:clamp(48px,5vw,80px);line-height:1;letter-spacing:-.025em;color:var(--gold);
+  }
+  .stat .num .suffix{font-style:normal;color:var(--text);font-weight:400;font-size:.7em;margin-left:.05em;letter-spacing:0}
+  .stat .lbl{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--mute);text-transform:uppercase}
+  @media (max-width:720px){ .stat-strip{grid-template-columns:1fr;gap:24px} }
+
+  .timeline{margin:120px 0 0}
+  .timeline-track{
+    display:grid;grid-template-columns:repeat(5,1fr);gap:0;
+    position:relative;padding:32px 0 8px;
+  }
+  .timeline-track::before{
+    /* Logical inset-inline-start so the connecting line anchors to the START
+       edge of the timeline (left in EN, right in AR/KU) and grows toward the
+       end of reading direction. */
+    content:'';position:absolute;inset-inline-start:0;top:48px;height:1px;background:var(--rule-strong);
+    width:0;
+    transition:width 1.5s cubic-bezier(.2,.8,.2,1) .3s;
+  }
+  .reveal.in .timeline-track::before{width:100%}
+  .tl-stop{
+    position:relative;padding-top:64px;
+    opacity:0;transform:translateY(12px);
+    transition:opacity .6s ease,transform .6s ease;
+  }
+  .reveal.in .tl-stop{opacity:1;transform:translateY(0)}
+  .reveal.in .tl-stop:nth-child(1){transition-delay:.4s}
+  .reveal.in .tl-stop:nth-child(2){transition-delay:.6s}
+  .reveal.in .tl-stop:nth-child(3){transition-delay:.8s}
+  .reveal.in .tl-stop:nth-child(4){transition-delay:1s}
+  .reveal.in .tl-stop:nth-child(5){transition-delay:1.2s}
+  .tl-stop::before{
+    /* Circle anchored to the START edge of its column so it aligns with the
+       year/role text below it in both LTR and RTL. With `left: 0`, the
+       leftmost RTL column's circle landed off-canvas on the far left. */
+    content:'';position:absolute;inset-inline-start:0;top:42px;width:14px;height:14px;
+    border-radius:50%;background:var(--bg);border:2px solid var(--rule-strong);
+  }
+  .tl-stop.now::before{background:var(--gold);border-color:var(--gold);box-shadow:0 0 0 6px rgba(212,165,116,.18);animation:tlPulse 2.4s ease-in-out infinite}
+  @keyframes tlPulse{
+    0%,100%{box-shadow:0 0 0 6px rgba(212,165,116,.18)}
+    50%{box-shadow:0 0 0 12px rgba(212,165,116,.04)}
+  }
+  .tl-stop .yr{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;color:var(--gold);display:block;margin-bottom:6px;text-transform:uppercase}
+  .tl-stop .role{font-family:var(--font-display);font-weight:500;font-size:16px;line-height:1.3;color:var(--text);display:block;text-wrap:balance}
+  .tl-stop .org{font-size:13px;color:var(--mute);display:block;margin-top:4px}
+
+  @media (max-width:880px){
+    .about-stage{grid-template-columns:1fr;gap:48px}
+    .portrait-frame{max-width:280px}
+    .timeline-track{grid-template-columns:1fr;gap:0}
+    /* Vertical timeline on mobile: connecting line + circles flip to the
+       start edge of reading direction (left in EN, right in AR/KU). */
+    .timeline-track::before{inset-inline-start:7px;inset-inline-end:auto;top:0;bottom:0;width:1px;height:auto;transition:height 1.5s cubic-bezier(.2,.8,.2,1) .3s}
+    .reveal.in .timeline-track::before{width:1px;height:100%}
+    .tl-stop{padding-block:0 24px;padding-inline-start:36px;padding-inline-end:0}
+    .tl-stop::before{inset-inline-start:0;top:2px}
+  }
+
+  /* ============================================================
+     §05 CONTACT
+     ============================================================ */
+  .contact-stage{
+    text-align:center;padding:40px 0;
+    display:flex;flex-direction:column;align-items:center;gap:28px;
+  }
+  .contact-mega{
+    font-family:var(--font-display);font-style:italic;font-weight:500;
+    font-size:clamp(56px,8vw,128px);line-height:.98;letter-spacing:-.025em;
+    color:var(--text);margin:0;text-wrap:balance;max-width:14ch;
+  }
+  .contact-mega .accent{font-style:normal;color:var(--gold);font-weight:600}
+  .contact-deck{font-family:var(--font-body);font-size:18px;color:var(--text-2);max-width:48ch;margin:8px 0 24px;line-height:1.6}
+  .contact-channels{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:24px}
+  .channel-secondary{
+    display:flex;gap:32px;justify-content:center;flex-wrap:wrap;margin-top:14px;
+    font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;color:var(--mute);text-transform:uppercase;
+  }
+  .channel-secondary a{color:var(--text-2)}
+  .channel-secondary a:hover{color:var(--gold)}
+  /* Desktop: keep phone + email on one centered row, push location to its
+     own row. The dot between email and location is hidden so the first
+     row reads cleanly as "phone · email" with the dot perfectly centered
+     between them — no orphan trailing dot. The mobile media query (≤880px)
+     overrides this with a full column stack. */
+  .channel-secondary > span:nth-of-type(2){display:none}
+  .channel-secondary > span:nth-of-type(3){flex-basis:100%}
+
+  /* Brief form disclosure */
+  .form-toggle{
+    display:inline-flex;align-items:center;gap:14px;
+    margin-top:36px;padding:10px 0;
+    background:transparent;border:0;cursor:pointer;
+    font-family:var(--font-mono);font-size:11.5px;letter-spacing:.22em;
+    color:var(--mute);text-transform:uppercase;
+    transition:color .25s;
+  }
+  .form-toggle:hover{color:var(--text)}
+  .form-toggle .ft-line{display:inline-block;width:24px;height:1px;background:currentColor;opacity:.6}
+  .form-toggle .toggle-arrow{transition:transform .4s cubic-bezier(.2,.8,.2,1);display:inline-block}
+  .form-toggle.is-open .toggle-arrow{transform:rotate(90deg);color:var(--gold)}
+  /* In RTL the default arrow is ← (not →), so rotating +90° CW would yield ↑.
+     Rotate −90° instead so the arrow lands as ↓ when the disclosure expands
+     downward — matching LTR's visual feedback. */
+  html[dir="rtl"] .form-toggle.is-open .toggle-arrow{transform:rotate(-90deg)}
+  .form-toggle.is-open{color:var(--gold)}
+
+  .form-disclosure{
+    display:grid;grid-template-rows:0fr;
+    transition:grid-template-rows .5s cubic-bezier(.2,.8,.2,1);
+    width:100%;max-width:600px;margin:0 auto;
+  }
+  .form-disclosure > .fd-inner{overflow:hidden}
+  .form-disclosure.is-open{grid-template-rows:1fr}
+
+  #contactForm{
+    padding:32px 0 0;
+    display:flex;flex-direction:column;gap:14px;
+    text-align:left;
+  }
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media (max-width:560px){ .form-row{grid-template-columns:1fr} }
+
+  .form-field{
+    width:100%;padding:14px 18px;
+    background:rgba(245,227,192,0.05);
+    border:1px solid rgba(245,227,192,0.15);
+    border-radius:2px;
+    color:var(--text);
+    font-family:var(--font-body);font-size:15px;line-height:1.5;
+    transition:border-color .25s,background .25s,box-shadow .25s;
+  }
+  .form-field:focus{
+    outline:none;border-color:var(--gold);
+    background:rgba(245,227,192,0.08);
+    box-shadow:0 0 0 3px rgba(212,165,116,0.15);
+  }
+  .form-field::placeholder{color:var(--mute)}
+  .form-field-textarea{min-height:120px;resize:vertical;font-family:var(--font-body)}
+
+  .form-actions{display:flex;justify-content:center;margin-top:8px}
+  .form-submit{padding:14px 32px;font-size:13.5px}
+
+  .form-msg{
+    display:none;padding:14px 18px;border-radius:2px;margin-top:8px;
+    font-family:var(--font-body);font-size:14px;line-height:1.55;text-align:center;
+  }
+  .form-msg.is-shown{display:block;animation:msgFadeIn .4s ease-out}
+  @keyframes msgFadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+  .form-msg.success{
+    background:rgba(212,165,116,0.10);border:1px solid rgba(212,165,116,0.35);
+    color:var(--cream);
+  }
+  .form-msg.success .form-msg-tick{color:var(--gold-bright);font-weight:600;margin-right:4px}
+  .form-msg.error{
+    background:rgba(201,104,42,0.12);border:1px solid rgba(201,104,42,0.4);
+    color:var(--cream);
+  }
+  .form-msg.error a{color:var(--gold);text-decoration:underline}
+
+  /* ============================================================
+     Footer
+     ============================================================ */
+  .footerbar{
+    border-top:1px solid var(--rule);
+    padding:clamp(32px, 5vw, 48px) 0 clamp(40px, 6vw, 64px);
+    margin-top:clamp(48px, 8vw, 80px);
+    display:grid;grid-template-columns:1fr auto;gap:32px;align-items:end;
+  }
+  .currently{
+    font-family:var(--font-display);font-style:italic;font-size:18px;color:var(--text);max-width:50ch;line-height:1.45;
+  }
+  .currently .label{
+    display:block;font-family:var(--font-mono);font-style:normal;font-size:11px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:10px;
+  }
+  .endmark{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;color:var(--mute);text-transform:uppercase;text-align:right;
+  }
+  .endmark b{color:var(--text);font-weight:500;display:block;margin-bottom:4px}
+  @media (max-width:720px){
+    .footerbar{grid-template-columns:1fr;gap:32px}
+    .endmark{text-align:left}
+  }
+
+  /* ============================================================
+     Trilingual preview
+     ============================================================ */
+  .lang-preview{
+    margin:120px 0 0;padding:48px;
+    background:var(--bg-2);border:1px solid var(--rule);border-radius:2px;
+    display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;
+  }
+  .lang-preview .label{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;
+    writing-mode:vertical-rl;transform:rotate(180deg);align-self:stretch;display:flex;align-items:center;
+  }
+  .lang-preview .lines > *{margin:0 0 14px}
+  .lang-preview .en{font-family:var(--font-display);font-style:italic;font-size:24px;color:var(--text);line-height:1.3}
+  /* `direction: rtl` is required for proper Arabic/Kurdish character rendering
+     (right-to-left letter flow, correct quote placement via bidi). But the
+     showcase aligns all three samples to the PAGE direction so they sit on
+     the same visual side as the English sample (left in LTR, right in RTL).
+     RTL override below flips them when the user switches the page direction. */
+  .lang-preview .ar{font-family:var(--font-arabic);font-weight:600;font-size:26px;line-height:1.5;color:var(--text);direction:rtl;text-align:left}
+  .lang-preview .ku{font-family:var(--font-arabic);font-weight:600;font-size:26px;line-height:1.5;color:var(--text);direction:rtl;text-align:left}
+  .lang-preview .note{font-family:var(--font-mono);font-size:11px;letter-spacing:.04em;color:var(--mute);font-style:normal;margin-top:18px;line-height:1.6;text-transform:none}
+  @media (max-width:720px){
+    .lang-preview{grid-template-columns:1fr;padding:32px;gap:20px}
+    .lang-preview .label{writing-mode:horizontal-tb;transform:none;align-self:start}
+  }
+
+  /* ============================================================
+     Reveal scaffold
+     ============================================================ */
+  .reveal{}
+
+  /* ============================================================
+     RTL — Arabic & Kurdish Sorani
+     ============================================================ */
+  html[dir="rtl"] body,
+  html[dir="rtl"] .topnav,
+  html[dir="rtl"] .brand-name,
+  html[dir="rtl"] .hero-meta,
+  html[dir="rtl"] .hero-sub,
+  html[dir="rtl"] .hero-cue,
+  html[dir="rtl"] .marquee-track > span,
+  html[dir="rtl"] .sec-label,
+  html[dir="rtl"] .sec-num-badge,
+  html[dir="rtl"] .sec-deck,
+  html[dir="rtl"] .lead-num,
+  html[dir="rtl"] .practice-side .label,
+  html[dir="rtl"] .adj-list .name,
+  html[dir="rtl"] .adj-list .meta,
+  html[dir="rtl"] .work-content .meta,
+  html[dir="rtl"] .ph-tag,
+  html[dir="rtl"] .portrait-tag,
+  html[dir="rtl"] .about-cite,
+  html[dir="rtl"] .stat .lbl,
+  html[dir="rtl"] .tl-stop .yr,
+  html[dir="rtl"] .tl-stop .role,
+  html[dir="rtl"] .tl-stop .org,
+  html[dir="rtl"] .form-toggle,
+  html[dir="rtl"] .form-field,
+  html[dir="rtl"] .form-msg,
+  html[dir="rtl"] .channel-secondary,
+  html[dir="rtl"] .currently,
+  html[dir="rtl"] .currently .label,
+  html[dir="rtl"] .endmark,
+  html[dir="rtl"] .lang-preview .label{
+    font-family:var(--font-arabic) !important;
+    letter-spacing:0 !important;
+  }
+  /* On RTL page, flip the trilingual AR/KU samples back to right-aligned so
+     they match the English sample (which naturally aligns right when the page
+     direction is RTL). Keeps all three samples on the same visual side. */
+  html[dir="rtl"] .lang-preview .ar,
+  html[dir="rtl"] .lang-preview .ku{
+    text-align:right;
+  }
+  /* Force RTL direction + right alignment on all form fields. Without this,
+     `type="tel"`, `type="email"`, `type="url"`, and `type="number"` inputs
+     fall back to the browser's user-agent stylesheet which forces `direction: ltr`
+     (because those data types are inherently LTR). The result: their placeholder
+     text aligns left while sibling text inputs align right, breaking the RTL form. */
+  html[dir="rtl"] .form-field{
+    direction:rtl;
+    text-align:right;
+  }
+  html[dir="rtl"] .form-field::placeholder{
+    text-align:right;
+  }
+  html[dir="rtl"] .hero h1,
+  html[dir="rtl"] .sec-title,
+  html[dir="rtl"] .practice-primary h3,
+  html[dir="rtl"] .work-content h3,
+  html[dir="rtl"] .about-quote,
+  html[dir="rtl"] .contact-mega,
+  html[dir="rtl"] .stat .num,
+  html[dir="rtl"] .lang-preview .en,
+  html[dir="rtl"] .currently{
+    font-family:var(--font-arabic) !important;
+    font-style:normal !important;
+    letter-spacing:0 !important;
+  }
+  html[dir="rtl"] body{line-height:1.65}
+  /* Arabic / Kurdish display headings need more vertical line-box room than
+     Latin because of high diacritics (hamza ء, fatha ◌َ, damma ◌ُ, etc.) and
+     tall ascenders (ل, ك, ا). With Latin-tuned tight line-heights (.96–1.0),
+     those glyph tops overflow the line-box and visually intrude into the
+     element above. 1.3 gives breathing room without making the headlines
+     feel airy. */
+  html[dir="rtl"] .hero h1{line-height:1.3}
+  html[dir="rtl"] .sec-title{line-height:1.3}
+  html[dir="rtl"] .practice-primary h3,
+  html[dir="rtl"] .work-content h3,
+  html[dir="rtl"] .contact-mega{line-height:1.25}
+  html[dir="rtl"] .about-quote{line-height:1.4}
+  html[dir="rtl"] p{line-height:1.75}
+
+  /* Layout flips — desktop only. Wrapped in a min-width media query so they
+     don't override the mobile collapse (`grid-template-columns: 1fr` at
+     ≤880px). Without this guard, RTL practice + about stayed two-column on
+     phones, with the primary content cramped into half-viewport width. */
+  @media (min-width: 881px){
+    html[dir="rtl"] .practice-wrap{grid-template-columns:1fr 1.2fr}
+    html[dir="rtl"] .about-stage{grid-template-columns:1.4fr 1fr}
+  }
+
+  /* Back-to-top is horizontally centered in both LTR and RTL — no per-direction
+     overrides needed. */
+  html[dir="rtl"] .scroll-rail{left:auto;right:24px}
+  html[dir="rtl"] .scroll-rail .pct{left:auto;right:6px}
+
+  html[dir="rtl"] .work-scene{direction:rtl}
+  html[dir="rtl"] .work-scene > *{direction:rtl}
+  html[dir="rtl"] .work-scene.flip{direction:ltr}
+  html[dir="rtl"] .work-scene.flip > *{direction:ltr}
+
+  html[dir="rtl"] .sec-title{clip-path:inset(0 0 0 100%)}
+  html[dir="rtl"] .reveal.in .sec-title{clip-path:inset(0 0 0 0)}
+
+  html[dir="rtl"] .topnav a::after{transform-origin:left}
+  html[dir="rtl"] .topnav a:hover::after{transform-origin:right}
+
+  /* ============================================================
+     Comprehensive responsive overrides
+     ------------------------------------------------------------
+     Tablet  (≤1024px) — intermediate adjustments
+     Phone   (≤880px)  — main breakpoint where most grids collapse
+     Small   (≤480px)  — very small phones
+     ------------------------------------------------------------
+     Most spacing already scales fluidly via clamp() in the base
+     styles; these queries handle layout shifts and overrides that
+     can't be expressed in a single value. */
+
+  /* TABLET — between desktop and the main phone breakpoint */
+  @media (max-width:1024px){
+    /* Tighten section title margins so headings don't dwarf the deck */
+    .sec-deck{margin:0 0 56px}
+    /* Reduce the gold marquee text + tighten dot spacing on smaller bars */
+    .marquee-track > span{font-size:12px;padding:0 24px;gap:24px}
+    /* About: portrait sits a bit smaller before it stacks */
+    .portrait-frame{max-width:none}
+    /* Timeline track: tighter gap between role stops */
+    .timeline{margin-top:80px}
+  }
+
+  /* PHONE — refinements on top of the existing 880px collapses */
+  @media (max-width:880px){
+    /* Hero meta line is long; allow it to wrap gracefully */
+    .hero-meta{flex-wrap:wrap;font-size:10px;letter-spacing:.18em}
+    /* CTA buttons fill the row on narrow phones for easier tapping */
+    .hero-cta{width:100%}
+    .btn-primary,.btn-secondary{flex:1 1 240px;justify-content:center;min-height:48px}
+    /* Section deck max-width can be wider on phones (less wasted space) */
+    .sec-deck{max-width:none;margin-bottom:40px}
+    /* Practice primary text + bullet list ease back from desktop sizes */
+    .practice-primary p{font-size:16px}
+    .practice-primary .bullet-list li{font-size:14px}
+    /* About bio readable on phones */
+    .about-bio p{font-size:16px;max-width:none}
+    /* Contact deck readable on phones */
+    .contact-deck{font-size:16px}
+    /* Contact secondary channels stack vertically on mobile — one item per line,
+       centered. The `·` dot separators (which sit between items horizontally on
+       desktop) are hidden via :not([data-en]) since they're decorative inline
+       glue, not meaningful content. Same layout in EN / AR / KU. */
+    .channel-secondary{flex-direction:column;gap:12px}
+    .channel-secondary > span:not([data-en]){display:none}
+    /* Lang preview portrait-style font sizes */
+    .lang-preview .en{font-size:20px}
+    .lang-preview .ar,.lang-preview .ku{font-size:22px}
+  }
+
+  /* SMALL PHONE — sub-480px (older / smaller devices) */
+  @media (max-width:480px){
+    /* Brand name truncates on very small phones to save space for lang switcher */
+    .brand-name{font-size:13px}
+    /* Lang switcher pills shrink slightly */
+    .lang button{padding:5px 9px;font-size:12.5px}
+    .lang .ar,.lang .ku{font-size:13.5px}
+    /* Marquee tightens further at small sizes (bar already thicker now) */
+    .marquee-track > span{font-size:11px;padding:0 18px;gap:18px}
+    /* Section title balances on very narrow screens */
+    .sec-title{font-size:clamp(36px,11vw,52px)}
+    /* Hero meta becomes vertical-friendly */
+    .hero-meta{font-size:9.5px}
+    /* Contact mega title scales down */
+    .contact-mega{font-size:clamp(40px,12vw,64px)}
+    /* Practice primary heading easier to read */
+    .practice-primary h3{font-size:clamp(28px,8vw,40px)}
+    /* About quote smaller */
+    .about-quote{font-size:clamp(22px,6.5vw,30px)}
+    /* Form fields keep iOS-friendly font-size to prevent zoom on focus */
+    .form-field{font-size:16px}
+    /* Tiny phones: lift the button slightly closer to the marquee since
+       vertical space is tighter. Already centered in both LTR and RTL. */
+    .back-to-top{bottom:calc(var(--marquee-h) + 10px)}
+  }
+
+  /* Universal: prevent any element from forcing horizontal scroll */
+  html,body{overflow-x:hidden;max-width:100%}
+  img,svg,video{max-width:100%;height:auto}
+
+  /* ============================================================
+     Reduced motion
+     ============================================================ */
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{
+      animation-duration:.01ms !important;
+      animation-iteration-count:1 !important;
+      transition-duration:.01ms !important;
+    }
+    .hero-bg,.hero-particles,.hero-grid,.marquee-track,#practice::before{animation:none !important}
+    .split-word > span{transform:none}
+    .sec-title{transform:none}
+    .reveal .sec-label::before{width:34px}
+    .reveal .timeline-track::before{width:100%}
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Side scroll indicator -->
+<div class="scroll-rail" aria-hidden="true">
+  <span class="bar" id="scrollBar"></span>
+  <span class="pct" id="scrollPct">00</span>
+</div>
+
+<!-- Back-to-top button -->
+<button class="back-to-top" id="backTop" aria-label="Back to top">↑</button>
+
+<!-- Top bar -->
+<header class="topbar" id="topbar">
+  <a class="brand" href="#" aria-label="Home">
+    <img class="brand-mark" src="assets/img/logo-animated-light.svg" alt="Saryas Jaf logo" />
+    <div class="brand-name" data-en="Saryas Jaf" data-ar="سەریاس جاف" data-ku="سەریاس جاف"><b>Saryas Jaf</b> · Erbil</div>
+  </a>
+  <nav class="topnav" aria-label="Primary">
+    <a href="#practice" data-en="Practice" data-ar="الممارسة" data-ku="پیشە">Practice</a>
+    <a href="#work" data-en="Work" data-ar="الأعمال" data-ku="کارەکان">Work</a>
+    <a href="#about" data-en="About" data-ar="نبذة" data-ku="دەربارە">About</a>
+    <a href="#contact" data-en="Contact" data-ar="تواصل" data-ku="پەیوەندی">Contact</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Language">
+    <button class="active" data-lang="en" aria-pressed="true">EN</button>
+    <button class="ar" data-lang="ar" aria-pressed="false" lang="ar" dir="rtl">العربية</button>
+    <button class="ku" data-lang="ku" aria-pressed="false" lang="ckb" dir="rtl">کوردی</button>
+  </div>
+  <!-- Mobile-only hamburger: hidden ≥881px, shown on phones/tablets to open the
+       full-screen nav overlay below. aria-controls + aria-expanded keep it
+       accessible for screen readers. -->
+  <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- Mobile nav overlay — full-screen menu that slides in when the hamburger is
+     tapped. Hidden from screen readers + keyboard until opened (aria-hidden).
+     The language switcher lives at the top of the overlay on mobile (the
+     topbar copy is hidden ≤880px to keep that strip uncluttered). Both
+     `.lang` groups stay in sync via the same JS query selector. -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile primary" aria-hidden="true">
+  <div class="lang" role="group" aria-label="Language">
+    <button class="active" data-lang="en" aria-pressed="true">EN</button>
+    <button class="ar" data-lang="ar" aria-pressed="false" lang="ar" dir="rtl">العربية</button>
+    <button class="ku" data-lang="ku" aria-pressed="false" lang="ckb" dir="rtl">کوردی</button>
+  </div>
+  <a href="#practice" data-en="Practice" data-ar="الممارسة" data-ku="پیشە">Practice</a>
+  <a href="#work" data-en="Work" data-ar="الأعمال" data-ku="کارەکان">Work</a>
+  <a href="#about" data-en="About" data-ar="نبذة" data-ku="دەربارە">About</a>
+  <a href="#contact" data-en="Contact" data-ar="تواصل" data-ku="پەیوەندی">Contact</a>
+</nav>
+
+<!-- ==================================================
+     §01 HERO
+     ================================================== -->
+<section class="hero" aria-labelledby="hero-h">
+  <div class="hero-bg"></div>
+  <div class="hero-image" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-particles"></div>
+
+  <div class="hero-content">
+    <p class="hero-meta" data-en="No. 042 — Computer Engineer · Eight years on the record" data-ar="رقم ٠١ — مهندس حاسوب · ثماني سنوات مسجلة" data-ku="ژمارە ٠١ — ئەندازیاری کۆمپیوتەر · هەشت ساڵ لە تۆمارکردن">No. 042 — Erbil — 2026 — Computer Engineer · Eight years on the record</p>
+    <h1 id="hero-h" class="js-split" data-en='I keep critical sites <span class="accent">running</span>.' data-ar='أُبقي المواقع الحساسة <span class="accent">شغالا‌</span>.' data-ku='شوێنە هەستیارەکان بە کارایی <span class="accent">دەهێڵمەوە</span>.'>I keep critical sites <span class="accent">running</span>.</h1>
+    <p class="hero-sub" data-en="Eight years engineering IT infrastructure, security systems, and the unglamorous backbone that keeps oil-and-gas operations and enterprise networks online — across the Kurdistan Region of Iraq and beyond." data-ar="ثماني سنوات من العمل الهندسي في البنية التحتية لتكنولوجيا المعلومات، وأنظمة الأمن، والركيزة الأساسية غير المرئية التي تضمن بقاء العملاء وشبکات الشرکات متصلة بالإنترنت — في جميع أنحاء إقليم كوردستان العراق." data-ku="هەشت ساڵ کاری ئەندازیاری لە ژێرخانی ئایتی، سیستەمی ئاسایش، و بڕبڕەی پشتی نەبینراو کە دڵنیای دەدات لە مانەوەی کۆمپانیاکان و تۆڕی کۆمپانیاکان بە ئینتەرنێتەوە — لە سەرانسەری هەرێمی کوردستانی عێراق.">Eight years engineering IT infrastructure, security systems, and the unglamorous backbone that keeps oil-and-gas operations and enterprise networks online — across the Kurdistan Region of Iraq and beyond.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn-primary" data-en='Start a project <span class="btn-arrow">→</span>' data-ar='ابدأ مشروعاً <span class="btn-arrow">←</span>' data-ku='پڕۆژەیەک دەست پێبکە <span class="btn-arrow">←</span>'>Start a project <span class="btn-arrow">→</span></a>
+      <a href="#work" class="btn-secondary" data-en='See the work <span class="btn-arrow">→</span>' data-ar='اطّلع على الأعمال <span class="btn-arrow">←</span>' data-ku='کارەکان ببینە <span class="btn-arrow">←</span>'>See the work <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+
+  <span class="hero-cue" aria-hidden="true" data-en="Scroll" data-ar="اسحب" data-ku="ڕاکێشە">Scroll</span>
+</section>
+
+<!-- ==================================================
+     MARQUEE STRIP
+     ================================================== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span data-en="CCTV Infrastructure" data-ar="البنية التحتية للمراقبة" data-ku="ژێرخانی CCTV">CCTV Infrastructure</span>
+    <span data-en="Access Control Systems" data-ar="أنظمة التحكم بالوصول" data-ku="سیستەمی کۆنترۆڵی دەستڕاگەیشتن">Access Control Systems</span>
+    <span data-en="Network Architecture" data-ar="هندسة الشبكات" data-ku="ئەندازیاری تۆڕ">Network Architecture</span>
+    <span data-en="IoT Solutions" data-ar="حلول إنترنت الأشياء" data-ku="چارەسەری IoT">IoT Solutions</span>
+    <span data-en="PCB Design" data-ar="تصميم اللوحات الإلكترونية" data-ku="دیزاینی تەختەی ئەلیکترۆنی">PCB Design</span>
+    <span data-en="Vendor Management" data-ar="إدارة المزوّدين" data-ku="بەڕێوەبردنی فرۆشیار">Vendor Management</span>
+    <span data-en="Compliance &amp; Documentation" data-ar="الامتثال والتوثيق" data-ku="پەیڕەو و بەڵگەنامە">Compliance &amp; Documentation</span>
+    <span data-en="Field Engineering" data-ar="الهندسة الميدانية" data-ku="ئەندازیاری مەیدانی">Field Engineering</span>
+    <span data-en="Web Development" data-ar="تطوير الويب" data-ku="گەشەپێدانی وێب">Web Development</span>
+    <span data-en="UI/UX Design" data-ar="تصميم واجهات الاستخدام" data-ku="دیزاینی ڕووکار و ئەزموونی بەکارهێنەر">UI/UX Design</span>
+    <span data-en="Mobile Applications" data-ar="تطبيقات الجوال" data-ku="ئەپلیکەیشنی مۆبایل">Mobile Applications</span>
+    <!-- duplicate for seamless loop -->
+    <span data-en="CCTV Infrastructure" data-ar="البنية التحتية للمراقبة" data-ku="ژێرخانی CCTV">CCTV Infrastructure</span>
+    <span data-en="Access Control Systems" data-ar="أنظمة التحكم بالوصول" data-ku="سیستەمی کۆنترۆڵی دەستڕاگەیشتن">Access Control Systems</span>
+    <span data-en="Network Architecture" data-ar="هندسة الشبكات" data-ku="ئەندازیاری تۆڕ">Network Architecture</span>
+    <span data-en="IoT Solutions" data-ar="حلول إنترنت الأشياء" data-ku="چارەسەری IoT">IoT Solutions</span>
+    <span data-en="PCB Design" data-ar="تصميم اللوحات الإلكترونية" data-ku="دیزاینی تەختەی ئەلیکترۆنی">PCB Design</span>
+    <span data-en="Vendor Management" data-ar="إدارة المزوّدين" data-ku="بەڕێوەبردنی فرۆشیار">Vendor Management</span>
+    <span data-en="Compliance &amp; Documentation" data-ar="الامتثال والتوثيق" data-ku="پەیڕەو و بەڵگەنامە">Compliance &amp; Documentation</span>
+    <span data-en="Field Engineering" data-ar="الهندسة الميدانية" data-ku="ئەندازیاری مەیدانی">Field Engineering</span>
+    <span data-en="Web Development" data-ar="تطوير الويب" data-ku="گەشەپێدانی وێب">Web Development</span>
+    <span data-en="UI/UX Design" data-ar="تصميم واجهات الاستخدام" data-ku="دیزاینی ڕووکار و ئەزموونی بەکارهێنەر>UI/UX Design</span>
+    <span data-en="Mobile Applications" data-ar="تطبيقات الجوال" data-ku="ئەپلیکەیشنی مۆبایل">Mobile Applications</span>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- §02 PRACTICE -->
+  <section class="block reveal" id="practice" aria-labelledby="practice-h">
+    <div>
+      <p class="sec-label"><span class="sec-num-badge" data-en="§02 — Practice" data-ar="§02 — الممارسة" data-ku="§02 — پراکتیک">§02 — Practice</span></p>
+      <div class="sec-title-wrap"><h2 id="practice-h" class="sec-title" data-en='What I&#39;m <span class="accent">hired</span> to do.' data-ar='ما توظفت <span class="accent">للقيام</span> به.' data-ku='ئەو کارەی بۆی <span class="accent">دامەزراوم</span>.'>What I'm <span class="accent">hired</span> to do.</h2></div>
+      <p class="sec-deck" data-en="Not a list of services. A hierarchy — the work I'm built for, and the adjacent capabilities that come with the territory." data-ar="ليست مجرد قائمة خدمات، بل تسلسل هرمي — العمل الذي توظفتُ لأجله، والقدرات المجاورة التي تأتي مع هذا المجال." data-ku="تەنها لیستێکی خزمەتگوزارییەکان نییە، بەڵکو زنجیرەیەکە لە — ئەو کارەی کە بۆی دامەزراوم، و ئەو توانایانەی کە پەیوەستن بەم بوارەوە.">Not a list of services. A hierarchy — the work I'm built for, and the adjacent capabilities that come with the territory.</p>
+    </div>
+
+    <div class="practice-wrap">
+      <div class="practice-primary">
+        <span class="lead-num" data-en="Primary practice · 8 years" data-ar="الممارسة الأساسية · 8 سنوات" data-ku="پیشەی سەرەکی · 8 ساڵ">Primary practice · 8 years</span>
+        <h3 data-en="IT &amp; Security Infrastructure." data-ar="البنية التحتية للأمان وتقنية المعلومات." data-ku="ئایتی و ژێرخانی ئاسایش">IT &amp; Security Infrastructure.</h3>
+        <p data-en="End-to-end IT support, network architecture, and physical security at sites where neither can fail quietly. CCTV deployments, Access Control Systems, integration into existing ICS infrastructure, and the troubleshooting that comes from years on the ground." data-ar="دعم شامل لتقنية المعلومات، وهندسة الشبكات، والأمن المادي في المواقع التي لا يمكن أن يتعطل فيها أي منهما دون أن يشعر المستخدم. تركيب كاميرات المراقبة، وأنظمة التحكم في الوصول، والتكامل مع البنية التحتية الحالية لأنظمة التحكم الصناعية، واستكشاف الأخطاء وإصلاحها بناءً على سنوات من الخبرة الميدانية." data-ku="پشتیوانییەکی گشتگیری ئایتی، ئەندازیاری تۆڕ، و ئاسایشی فیزیکی لەو سایتانەی کە نابێت هیچ کامامێکیان تێکبچێت و خراپ ببێت بەبێ ئەوەی بەکارهێنەر هەستیان پێبکات. دانانی کامێرای چاودێری، سیستەمی کۆنترۆڵکردنی دەستڕاگەیشتن، یەکخستنی لەگەڵ ژێرخانی سیستەمی کۆنترۆڵکردنی پیشەسازیی دانراو، و چارەسەرکردنی کێشەکان بە پشتبەستن بە ساڵانێک ئەزموونی مەیدانی.">End-to-end IT support, network architecture, and physical security at sites where neither can fail quietly. CCTV deployments, Access Control Systems, integration into existing ICS infrastructure, and the troubleshooting that comes from years on the ground.</p>
+        <ul class="bullet-list">
+          <li data-en="Critical-infrastructure CCTV &amp; ACS at oil &amp; gas operations" data-ar="مراقبة وتحكم بالوصول في البنية التحتية الحيوية لعمليات النفط والغاز" data-ku="چاودێری و کۆنترۆڵکردنی دەستڕاگەیشتن لە ژێرخانی گرنگی کارەکانی نەوت و گازدا">Critical-infrastructure CCTV &amp; ACS at oil &amp; gas operations</li>
+          <li data-en="Multi-branch enterprise IT engineering &amp; vendor management" data-ar="هندسة تكنولوجيا المعلومات وإدارة الموردين للمؤسسات متعددة الفروع" data-ku="ئەندازیاری تەکنەلۆژیای زانیاری و بەڕێوەبردنی دابینکردن بۆ کۆمپانیا فرە لقەکان">Multi-branch enterprise IT engineering &amp; vendor management</li>
+          <li data-en="Compliance, documentation, on-site training" data-ar="الامتثال والتوثيق والتدريب الميداني" data-ku="پەیڕەو، بەڵگەنامەکردن، ڕاهێنانی مەیدانی">Compliance, documentation, on-site training</li>
+          <li data-en="Remote diagnostics &amp; on-call escalation" data-ar="التشخيص عن بُعد والاستجابة على الطلب" data-ku="هەڵسەنگاندنی دوور و وەڵامدانەوەی ئانی">Remote diagnostics &amp; on-call escalation</li>
+        </ul>
+      </div>
+
+      <aside class="practice-side">
+        <span class="label" data-en="Other capabilities" data-ar="القدرات الاخری" data-ku="تواناکانی تر">Adjacent capabilities</span>
+        <ul class="adj-list">
+          <li><span class="name" data-en="IoT solutions" data-ar="حلول إنترنت الأشياء" data-ku="چارەسەری IoT">IoT solutions</span><span class="meta" data-en="Arduino · ESP · RPi" data-ar="أردوينو · ESP · RPi" data-ku="ئاردوینۆ · ESP · RPi">Arduino · RPi</span></li>
+          <li><span class="name" data-en="Electronics &amp; PCB" data-ar="الإلكترونيات وتصميم اللوحات" data-ku="دیزاینی تەختەی ئەلیکترۆنی">Electronics &amp; PCB</span><span class="meta" data-en="Schematic → prototype" data-ar="مخطط ← نموذج" data-ku="نەخشە ← نموونە">Schematic → prototype</span></li>
+          <li><span class="name" data-en="Web development" data-ar="تطوير الويب" data-ku="گەشەپێدانی وێب">Web development</span><span class="meta" data-en="Static · responsive" data-ar="ثابت · متجاوب" data-ku="جێگیر · بەرپەرچ">Static · responsive</span></li>
+          <li><span class="name" data-en="Mobile applications" data-ar="تطبيقات الجوال" data-ku="ئەپلیکەیشنی مۆبایل">Mobile applications</span><span class="meta" data-en="On request" data-ar="عند الطلب" data-ku="بە داواکاری">On request</span></li>
+          <li><span class="name" data-en="UI/UX design" data-ar="تصميم الواجهات وتجربة المستخدم" data-ku="دیزاینی ڕووکار و ئەزموونی بەکارهێنەر">UI/UX design</span><span class="meta" data-en="Web · mobile" data-ar="ويب · جوال" data-ku="وێب · مۆبایل">Web · mobile</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+</div>
+
+<!-- §03 SELECTED WORK header -->
+<div class="wrap">
+  <section class="block reveal" id="work" aria-labelledby="work-h">
+    <div>
+      <p class="sec-label"><span class="sec-num-badge" data-en="§03 — Selected work" data-ar="§03 — أعمال مختارة" data-ku="§03 — کارە هەڵبژێرراوەکان">§03 — Selected work</span></p>
+      <div class="sec-title-wrap"><h2 id="work-h" class="sec-title" data-en='The <span class="accent">record</span>.' data-ar='<span class="accent">السجلّ</span>.' data-ku='<span class="accent">تۆمار</span>.'>The <span class="accent">record</span>.</h2></div>
+      <p class="sec-deck" data-en="A handful of engagements — the kind I want to be remembered for. Each one is a written record. Click through for the full account." data-ar="عدد من المشاريع — النوع الذي أريد أن أُذكر به. كل منها سجل مكتوب. اضغط للمزيد من التفاصيل." data-ku="کۆمەڵێک پڕۆژە — ئەو جۆرەی کە دەمەوێت پێیان بناسرێمەوە. هەر یەکێکیان تۆمارێکی نووسراوە. کلیک بکە بۆ بینینی تەواوی وردەکارییەکان.">A handful of engagements — the kind I want to be remembered for. Each one is a written record. Click through for the full account.</p>
+    </div>
+  </section>
+</div>
+
+<!-- §03 work scenes -->
+<div class="work-list">
+  <article class="work-scene reveal">
+    <div class="work-image">
+      <div class="ph-2"></div>
+    </div>
+    <div class="work-content">
+      <div class="meta" data-en="No. 013 · 2021 — Present · Multi-sector" data-ar="رقم 013 · 2021 — حتى الآن · متعدد القطاعات" data-ku="ژمارە 013 · 2021 — ئێستا · چەندان کەرت">No. 013 · 2021 — Present · Multi-sector</div>
+      <h3 data-en="IT Operations &amp; Strategic Integration." data-ar=".عمليات تقنية المعلومات والتكامل الاستراتيجي" data-ku=".کارەکانی ئایتی و یەکخستنی ستراتیژی">IT Operations &amp; Strategic Integration.</h3>
+      <p data-en="Leading IT engineering at Oak Leaf Company. Software integrations, end-user training, vendor management, and access-control compliance. Branch-management background informs every technical decision." data-ar="قيادة هندسة تقنية المعلومات في شركة أوك ليف. تكامل البرمجيات، تدريب المستخدمين النهائيين، إدارة الموردين، والامتثال لأنظمة التحكم في الوصول. خبرة إدارة الفروع تُؤثر في جميع القرارات التقنية." data-ku="پێشەنگی ئەندازیاری ئایتی لە کۆمپانیای ئۆک لیف. یەکخستنی نەرمەکاڵا، ڕاهێنانی بەکارهێنەری کۆتایی، بەڕێوەبردنی دابینکەر، و پابەندبوون بە کۆنترۆڵی دەستڕاگەیشتن. ئەزموونی بەڕێوەبردنی لق کاریگەری لەسەر هەموو بڕیارە تەکنیکییەکان هەیە.">Leading IT engineering at Oak Leaf Company. Software integrations, end-user training, vendor management, and access-control compliance. Branch-management background informs every technical decision.</p>
+    </div>
+  </article>
+  <article class="work-scene flip reveal">
+    <div class="work-image">
+      <div class="ph-1"></div>
+    </div>
+    <div class="work-content">
+      <div class="meta" data-en="No. 014 · 2019 — 2021 · Oil &amp; Gas" data-ar="رقم 014 · 2019 — 2021 · النفط والغاز" data-ku="ژمارە 014 · 2019 — 2021 · نەوت و گاز">No. 014 · 2019 — 2021 · Oil &amp; Gas</div>
+      <h3 data-en="Industrial Security Infrastructure." data-ar="البنية التحتية للأمن الصناعي." data-ku="ژێرخانی ئاسایشی پیشەسازی.">Industrial Security Infrastructure.</h3>
+      <p data-en="CCTV and Access Control Systems at a critical-infrastructure oil &amp; gas facility. Three-tier integrated architecture — field devices through central infrastructure to the control room." data-ar="أنظمة المراقبة وأنظمة التحكم بالدخول في منشأة نفط وغاز ذات بنية تحتية حيوية. بنية متكاملة ثلاثية المستويات - من الأجهزة الميدانية مروراً بالبنية التحتية المركزية وصولاً إلى غرفة التحكم." data-ku="سیستەمی چاودێری و کۆنترۆڵکردنی دەستڕاگەیشتن لە دامەزراوەیەکی گرینگی نەوت و گاز. تەلارسازییەکی یەکگرتووی سێ چین – لە ئامێری مەیدانییەوە تا ژێرخانی ناوەندی تا ژووری کۆنترۆڵ.">CCTV and Access Control Systems at a critical-infrastructure oil &amp; gas facility. Three-tier integrated architecture — field devices through central infrastructure to the control room.</p>
+    </div>
+  </article>
+  <article class="work-scene reveal">
+    <div class="work-image">
+      <div class="ph-3"></div>
+    </div>
+    <div class="work-content">
+      <div class="meta" data-en="No. 012 · 2017 — 2018 · Local IT" data-ar="رقم 012 · 2017 — 2018 · شركة IT محلية" data-ku="ژمارە 012 · 2017 — 2018 · کۆمپانیای IT-ی ناوخۆیی">No. 012 · 2017 — 2018 · Local IT</div>
+      <h3 data-en="Hardware &amp; Systems Support." data-ar="دعم الأجهزة والأنظمة." data-ku="پشتیوانی هاردوێر و سیستەم.">Hardware &amp; Systems Support.</h3>
+      <p data-en="Hands-on technical support at a local IT firm: hardware troubleshooting, OS installation and configuration, system updates, backups, and IT-audit participation. The grounding everything else builds on." data-ar="دعم فني مباشر في شركة تقنية معلومات محلية: استكشاف أعطال الأجهزة وإصلاحها، تثبيت أنظمة التشغيل وتكوينها، تحديثات الأنظمة، النسخ الاحتياطي، والمشاركة في عمليات تدقيق تقنية المعلومات. الأساس الذي يُبنى عليه كل شيء آخر." data-ku="پشتگیری تەکنیکی ڕاستەوخۆ لە کۆمپانیایەکی ناوخۆیی ئایتی: چارەسەرکردنی کێشە و چاککردنەوەی کێشەکانی هاردوێر، دامەزراندنی و ڕێکخستنی سیستەمی کارپێکردن، نوێکردنەوەی سیستەم، پاشەکەوتکردن و بەشداریکردن لە وردبینییەکانی ئایتی. ئەو بناغەیەی کە هەموو شتێکی تری لەسەر بنیات نراوە.">Hands-on technical support at a local IT firm: hardware troubleshooting, OS installation and configuration, system updates, backups, and IT-audit participation. The grounding everything else builds on.</p>
+    </div>
+  </article>
+</div>
+
+<div class="wrap">
+
+  <!-- §04 ABOUT -->
+  <section class="block reveal" id="about" aria-labelledby="about-h">
+    <div>
+      <p class="sec-label"><span class="sec-num-badge" data-en="§04 — On the engineer" data-ar="§04 — عن المهندس" data-ku="§04 — دەربارەی ئەندازیار">§04 — On the engineer</span></p>
+      <div class="sec-title-wrap"><h2 id="about-h" class="sec-title" data-en='A <span class="accent">written</span> record of eight years.' data-ar='سجلّ <span class="accent">مكتوب</span> لثماني سنوات.' data-ku='تۆمارێکی <span class="accent">نووسراو</span> لە هەشت ساڵدا'>A <span class="accent">written</span> record of eight years.</h2></div>
+    </div>
+
+    <div class="about-stage">
+      <div class="portrait-frame">
+        <span class="portrait-tag" data-en="No. 001 · self · 2026" data-ar="رقم 001 · شخصي · 2026" data-ku="ژمارە 001 · خۆم · 2026">No. 001 · self · 2026</span>
+      </div>
+
+      <div>
+        <p class="about-quote" data-en='"The hardest part of IT is rarely the IT — it&#39;s the <span class="accent">people, the politics, and the paperwork</span> around it. Eight years taught me that, and I bring that lesson to every site."' data-ar='"إن أصعب جزء في تكنولوجيا المعلومات نادراً ما يكون تكنولوجيا المعلومات نفسها - بل هو  <span class="accent">الأشخاص والسياسات والإجراءات الورقية </span>  المحيطة بها. لقد علمتني ثماني سنوات ذلك، وأنا أطبق هذا الدرس في كل موقع عمل."' data-ku='"سەختترین بەش لە تەکنەلۆژیای زانیاریدا بە دەگمەن خودی تەکنەلۆژیای زانیاری خۆیەتی بەڵکو — <span class="accent">خەڵک و سیاسەت و نوسراوەکانی</span> دەوروبەریەتی. هەشت ساڵی ئەزموون ئەوەی فێرکردووم، و ئەو وانەیە لە هەموو شوێنێکی کاردا پەیڕەو دەکەم."'>"The hardest part of IT is rarely the IT — it's the <span class="accent">people, the politics, and the paperwork</span> around it. Eight years taught me that, and I bring that lesson to every site."</p>
+        <div class="about-bio">
+          <p data-en="Computer Engineer in Erbil, Kurdistan Region of Iraq. Eight years across IT engineering, security systems, and team leadership — bridging hardware and software in the kinds of places where neither can fail quietly." data-ar="مهندس حاسوب في أربيل، إقليم كردستان العراق. خبرة ثماني سنوات في هندسة تقنية المعلومات، وأنظمة الأمن، وقيادة الفرق، حيث عملتُ على الربط بين الأجهزة والبرمجيات في بيئات بالغة الحساسية لا مجال فيها للفشل." data-ku="ئەندازیاری کۆمپیوتەر لە شاری هەولێر. هەشت ساڵ ئەزموونم هەیە لە ئەندازیاری ئایتی و سیستەمی ئاسایش و سەرکردایەتی تیم، لەوێ کارم لەسەر یەکخستنی ڕەقەکاڵا و نەرمەکاڵا بە شێوەیەکی بێ کێشە لە ژینگە زۆر هەستیار و پڕ داواکارییەکان کردووە.">Computer Engineer in Erbil, Kurdistan Region of Iraq. Eight years across IT engineering, security systems, and team leadership — bridging hardware and software in the kinds of places where neither can fail quietly.</p>
+          <p data-en="Trained at Ishik University (B.Sc. Computer Engineering, 2012–2016). First three years inside oil-and-gas access-control rooms. Next four leading a eighteen-person branch team where I learned the lesson above. Today I split my time between IT engineering operations and infrastructure consulting for regional clients." data-ar="تخرجتُ من جامعة إيشيك (بكالوريوس في هندسة الحاسوب، ٢٠١٢-٢٠١٦). عملتُ خلال السنوات الثلاث الأولى في أنظمة التحكم بالدخول وكاميرات المراقبة في قطاع النفط والغاز. وفي السنوات الأربع التالية، قُدتُ فريقًا فرعيًا مكونًا من ثمانية عشر شخصًا، مكتسبًا الخبرة المذكورة آنفًا. أعمل حاليًا في هندسة عمليات تقنية المعلومات، وأقدم استشارات البنية التحتية لعملاء إقليميين." data-ku="دەرچووی زانکۆی ئیشیک (بەکالۆریۆس لە ئەندازیاری کۆمپیوتەر، ٢٠١٢-٢٠١٦)م. لە سێ ساڵی یەکەمدا کارم لەسەرسیستەمی کۆنترۆڵی دەستگەیشتن و سیستەمی کامێرای چاودێری لە کەرتی نەوت و گازدا کردووە. بۆ ماوەی چوار ساڵی داهاتوو سەرکردایەتی تیمێکی لاوەکیم کرد کە هەژدە کەسی تێدابوو، ئەو ئەزموونەی پێشتر باسم کرد. لە ئێستادا لە ئەندازیاری کارەکانی ئایتی کاردەکەم، ڕاوێژکاری ژێرخانی پێشکەش بە کڕیارە ناوچەییەکان دەکەم.">Trained at Ishik University (B.Sc. Computer Engineering, 2012–2016). First three years inside oil-and-gas access-control rooms. Next four leading a fourteen-person branch team where I learned the lesson above. Today I split my time between IT engineering operations and infrastructure consulting for regional clients.</p>
+          <p data-en="Available for engagements across the KRI and broader Iraq." data-ar="متاح للعمل في جميع أنحاء إقليم كردستان العراق والعراق عمومًا." data-ku="ئامادەم بۆ کارکردن لە سەرتاسەری هەرێمی کوردستانی عێراق و عێراق بە گشتی.">Available for engagements across the KRI and broader Iraq.</p>
         </div>
-        <!-- Case Study 2: IT Operations & Strategic Integration -->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <h2 class="text-uppercase">IT Operations &amp; Strategic Integration</h2>
-                                    <p class="item-intro text-muted">Bridging IT engineering with business strategy at Oak Leaf Company.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="IT operations" />
-                                    <p class="mt-4">Currently leading IT engineering. Previously managed a 14-person branch team — giving me a unique perspective: I understand IT not just as technology, but as a business enabler. This dual experience helps me design IT solutions that align with how organizations actually work.</p>
-                                    <h4 class="mt-4 mb-3" style="text-align: left;">Key contributions</h4>
-                                    <ul style="text-align: left; padding-left: 1.5rem;">
-                                        <li>Lead integration of new software solutions, including end-user training and support</li>
-                                        <li>Managed user accounts and access controls in line with security policies</li>
-                                        <li>Negotiated vendor contracts to optimize IT spending</li>
-                                        <li>Maintained system documentation for compliance and knowledge sharing</li>
-                                        <li>Bridged technical and business stakeholders to align IT with company goals</li>
-                                    </ul>
-                                    <ul class="list-inline mt-4">
-                                        <li><strong>Client:</strong> Oak Leaf Company</li>
-                                        <li><strong>Period:</strong> 2021 – Present</li>
-                                        <li><strong>Roles:</strong> IT Engineer (current), Branch Manager (2021–2025)</li>
-                                        <li><strong>Skills:</strong> IT infrastructure, software integration, vendor management, team leadership</li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Case Study
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <p class="about-cite" data-en="— Saryas Jaf · Erbil, 2026" data-ar="— سرياس جاف · أربيل، 2026" data-ku="— سەریاس جاف · هەولێر، 2026">— Saryas Jaf · Erbil, 2026</p>
+      </div>
+    </div>
+
+    <!-- Big stat strip with count-up -->
+    <div class="stat-strip">
+      <div class="stat">
+        <span class="num"><span class="js-count" data-target="8">0</span><span class="suffix" data-en="years" data-ar="سنوات" data-ku="ساڵ">years</span></span>
+        <span class="lbl" data-en="In the field" data-ar="في الميدان" data-ku="لە مەیدان">In the field</span>
+      </div>
+      <div class="stat">
+        <span class="num"><span class="js-count" data-target="18">0</span><span class="suffix" data-en="people" data-ar="أشخاص" data-ku="کەس">people</span></span>
+        <span class="lbl" data-en="Team I led" data-ar="فريقٌ قُدتُه" data-ku="تیم سەرپرشتیم کردوون">Team I lead</span>
+      </div>
+      <div class="stat">
+        <span class="num"><span class="js-count" data-target="4">0</span><span class="suffix" data-en="sectors" data-ar="قطاعات" data-ku="کەرت">sectors</span></span>
+        <span class="lbl" data-en="Industries served" data-ar="صناعات خدمتُها" data-ku="پیشەسازییە خزمەتکراوەکان">Industries served</span>
+      </div>
+    </div>
+
+    <div class="timeline" aria-label="Career timeline">
+      <div class="timeline-track">
+        <div class="tl-stop"><span class="yr" data-en="2017 — 18" data-ar="2017 — 18" data-ku="2017 — 18">2017 — 18</span><span class="role" data-en="IT Support" data-ar="دعم تقنية المعلومات" data-ku="شارەزای ئایتی">IT Support</span><span class="org" data-en="Local IT firm" data-ar="يشرکة تكنولوجيا المعلومات محلیة" data-ku="کۆمپانیای ناوخۆیی ئایتی">Local IT firm</span></div>
+        <div class="tl-stop"><span class="yr" data-en="2019 — 21" data-ar="2019 — 21" data-ku="2019 — 21">2019 — 21</span><span class="role" data-en="ACS &amp; CCTV Engineer" data-ar="مهندس مراقبة وضبط الوصول" data-ku="ئەندازیاری ACS و CCTV">ACS &amp; CCTV Engineer</span><span class="org" data-en="Oil &amp; Gas Field" data-ar="حقل نفط وغاز" data-ku="کێڵگەی نەوت و گاز">Oil &amp; Gas Field</span></div>
+        <div class="tl-stop"><span class="yr" data-en="2021 — 25" data-ar="2021 — 25" data-ku="2021 — 25">2021 — 25</span><span class="role" data-en="Branch Manager" data-ar="مدير فرع" data-ku="بەڕێوەبەری لق">Branch Manager</span><span class="org" data-en="Oak Leaf Company" data-ar="شرکة آوك لیف" data-ku="کۆمپانیای ئۆک لیف">Oak Leaf Company</span></div>
+        <div class="tl-stop now"><span class="yr" data-en="2025 — Now" data-ar="2025 — الآن" data-ku="2025 — ئێستا">2025 — Now</span><span class="role" data-en="IT Engineer" data-ar="مهندس تقنية معلومات" data-ku="ئەندازیاری IT">IT Engineer</span><span class="org" data-en="Oak Leaf Company" data-ar="شرکة آوك لیف" data-ku="کۆمپانیای ئۆک لیف">Oak Leaf Company</span></div>
+        <div class="tl-stop"><span class="yr" data-en="Open" data-ar="متاح" data-ku="کراوە">Open</span><span class="role" data-en="Next engagement" data-ar="الارتباط التالي" data-ku="پڕۆژەی داهاتوو">Next engagement</span><span class="org" data-en="Q3 2026" data-ar="ر3 2026" data-ku="چ3 2026">Q3 2026</span></div>
+      </div>
+    </div>
+
+    <div class="lang-preview">
+      <div class="label" data-en="Trilingual" data-ar="ثلاثي اللغة" data-ku="سێ زمانی">Trilingual</div>
+      <div class="lines">
+        <p class="en">"I keep critical sites running."</p>
+        <p class="ar" lang="ar">"أُبقي المواقع الحيوية شغالا‌."</p>
+        <p class="ku" lang="ckb">"شوێنەگرنگەکان بەکارایی دەهێڵمەوە"</p>
+        <p class="note" data-en="Same hero sentence, three scripts. Arabic + Kurdish (Sorani) set in IBM Plex Sans Arabic 600 at 1.5 line-height. Sorani-specific glyphs covered (گ . چ . پ . ڤ . ڵ . ۆ . ێ . ڕ)." data-ar="نفس جملة الخلفیة، بثلاثة نصوص. العربية + الكردية (السورانية) مكتوبة بخط IBM Plex Sans Arabic 600 وبتباعد أسطر 1.5. الحروف الخاصة بالسورانية مشمولة (گ . چ . پ . ڤ . ڵ . ۆ . ێ . ڕ)." data-ku="هەمان ڕستەی باکگراوند، بە سێ دەق. عەرەبی + کوردی (سۆرانی) بە فۆنتی IBM Plex Sans Arabic 600 و بە دووری نێوان دێڕی ١.٥ نووسراوە. پیتە تایبەتەکانی سۆرانی (گ . چ . پ . ڤ . ڵ . ۆ . ێ . ڕ) لەخۆدەگرێت.">Same hero sentence, three scripts. Arabic + Kurdish (Sorani) set in IBM Plex Sans Arabic 600 at 1.5 line-height. Sorani-specific glyphs covered (ـگ ـچ ـپ ـڤ ـڵ ـۆ ـێ ـڕ).</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- §05 CONTACT -->
+<div class="wrap">
+  <section class="block reveal" id="contact" aria-labelledby="contact-h">
+    <div>
+      <p class="sec-label"><span class="sec-num-badge" data-en="§05 — Start a conversation" data-ar="§05 — ابدأ محادثة" data-ku="§05 — گفتوگۆیەک دەست پێبکە">§05 — Start a conversation</span></p>
+    </div>
+
+    <div class="contact-stage">
+      <h2 id="contact-h" class="contact-mega" data-en='Let&#39;s <span class="accent">build</span> something.' data-ar='لِنَبْنِ <span class="accent">شيئاً</span>.' data-ku='با شتێک <span class="accent">دروست بکەین</span>.'>Let's <span class="accent">build</span> something.</h2>
+      <p class="contact-deck" data-en="If you're looking for someone who shows up, documents the work, and stays accountable to it — let's talk. WhatsApp is fastest." data-ar="إذا كنت تبحث عن شخص يلتزم بالحضور، ويوثق العمل، ويتحمل المسؤولية عنه، فلنتحدث. واتساب هو الأسرع." data-ku="ئەگەر بەدوای کەسێکدا دەگەڕێیت کە پابەند بێت، و کارەکانی بەڵگە بکات، و بەرپرسیارێتی لە ئەستۆ بگرێت، با قسە بکەین. واتسئەپ خێراترین ڕێگایە.">If you're looking for someone who shows up, documents the work, and stays accountable to it — let's talk. WhatsApp is fastest.</p>
+      <div class="contact-channels">
+        <a class="btn-primary" href="https://wa.me/9647701943308" target="_blank" rel="noopener" data-en='Message on WhatsApp <span class="btn-arrow">→</span>' data-ar='راسلني على واتساب <span class="btn-arrow">←</span>' data-ku='پەیامێک لە واتساپ <span class="btn-arrow">←</span>'>
+          Message on WhatsApp <span class="btn-arrow">→</span>
+        </a>
+        <a class="btn-secondary" href="mailto:saryas.jaf9@gmail.com" data-en='Send an email <span class="btn-arrow">→</span>' data-ar='أرسل بريداً إلكترونياً <span class="btn-arrow">←</span>' data-ku='ئیمەیڵێک بنێرە <span class="btn-arrow">←</span>'>
+          Send an email <span class="btn-arrow">→</span>
+        </a>
+      </div>
+      <div class="channel-secondary">
+        <!-- dir="ltr" forces the BIDI algorithm to render these LTR-natural
+             data formats (phone, email) in their conventional order, even
+             when the parent page is in RTL mode. Without this, "+964 770 194 3308"
+             reorders to "3308 194 770 964+" because + and spaces are bidi-neutral. -->
+        <a href="tel:+9647701943308" dir="ltr">+964 770 194 3308</a>
+        <span style="opacity:.4">·</span>
+        <a href="mailto:saryas.jaf9@gmail.com" dir="ltr">saryas.jaf9@gmail.com</a>
+        <span style="opacity:.4">·</span>
+      </div>
+
+      <button class="form-toggle" id="formToggle" type="button" aria-expanded="false" aria-controls="briefDisclosure">
+        <span class="ft-line"></span>
+        <span data-en="Or send a brief" data-ar="أو أرسل ملخّصاً" data-ku="یان پوختەیەک بنێرە">Or send a brief</span>
+        <span class="toggle-arrow" data-en="→" data-ar="←" data-ku="←">→</span>
+      </button>
+
+      <div class="form-disclosure" id="briefDisclosure">
+        <div class="fd-inner">
+          <form id="contactForm" action="https://formspree.io/f/xaqagzjk" method="POST" novalidate>
+            <div class="form-row">
+              <input class="form-field" id="name" name="name" type="text" placeholder="Your name *" data-placeholder-en="Your name *" data-placeholder-ar="اسمك *" data-placeholder-ku="ناوت *" required autocomplete="name" />
+              <input class="form-field" id="email" name="email" type="email" placeholder="Your email *" data-placeholder-en="Your email *" data-placeholder-ar="بريدك الإلكتروني *" data-placeholder-ku="ئیمەیڵەکەت *" required autocomplete="email" />
             </div>
+            <input class="form-field" id="phone" name="phone" type="tel" placeholder="Your phone (optional)" data-placeholder-en="Your phone (optional)" data-placeholder-ar="رقم هاتفك (اختياري)" data-placeholder-ku="ژمارەی مۆبایل (ئارەزوومەندانە)" autocomplete="tel" />
+            <textarea class="form-field form-field-textarea" id="message" name="message" placeholder="Tell me about the project *" data-placeholder-en="Tell me about the project *" data-placeholder-ar="حدّثني عن المشروع *" data-placeholder-ku="لە بارەی پرۆژەکەوە بدوێ *" required rows="5"></textarea>
+            <div class="form-actions">
+              <button class="btn-primary form-submit" id="submitButton" type="submit">
+                <span class="submit-label" data-en="Send brief" data-ar="إرسال الملخّص" data-ku="ناردنی پوختە">Send brief</span>
+                <span class="btn-arrow" data-en="→" data-ar="←" data-ku="←">→</span>
+              </button>
+            </div>
+            <div class="form-msg success" id="formSuccess" role="status" aria-live="polite" data-en='<span class="form-msg-tick">✓</span> Thanks for reaching out — I&#39;ll get back to you within 24 hours.' data-ar='<span class="form-msg-tick">✓</span> شكراً لتواصلك — سأردّ عليك خلال 24 ساعة.' data-ku='<span class="form-msg-tick">✓</span> سوپاس بۆ پەیوەندیکردنت — لە ماوەی 24 کاتژمێردا وەڵامت دەدەمەوە.'>
+              <span class="form-msg-tick">✓</span> Thanks for reaching out — I'll get back to you within 24 hours.
+            </div>
+            <div class="form-msg error" id="formError" role="alert" data-en='Something went wrong. Try again, or email me directly at <a href="mailto:saryas.jaf9@gmail.com">saryas.jaf9@gmail.com</a>.' data-ar='حدث خطأ. حاول مرة أخرى، أو راسلني مباشرةً على <a href="mailto:saryas.jaf9@gmail.com">saryas.jaf9@gmail.com</a>.' data-ku='هەڵەیەک ڕوویدا. دووبارە هەوڵبدە، یان ڕاستەوخۆ ئیمەیڵم بۆ بنێرە لە <a href="mailto:saryas.jaf9@gmail.com">saryas.jaf9@gmail.com</a>.'>
+              Something went wrong. Try again, or email me directly at <a href="mailto:saryas.jaf9@gmail.com">saryas.jaf9@gmail.com</a>.
+            </div>
+          </form>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- AOS - Animate On Scroll -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-        <!-- Custom animations: hero words, AOS init, stat counters -->
-        <script>
-            // Hero heading: split into words for staggered fade-in
-            (function() {
-                var heading = document.getElementById('hero-heading');
-                if (heading) {
-                    var words = heading.textContent.trim().split(/\s+/);
-                    heading.innerHTML = words.map(function(word, i) {
-                        return '<span class="hero-word" style="animation-delay: ' + (0.2 + i * 0.12) + 's">' + word + '</span>';
-                    }).join(' ');
-                }
-            })();
+      </div>
+    </div>
+  </section>
 
-            // Initialize AOS scroll animations
-            AOS.init({
-                duration: 800,
-                once: true,
-                offset: 80,
-                easing: 'ease-out-cubic'
-            });
+  <footer class="footerbar">
+    <div class="currently">
+      <span class="label" data-en="Currently" data-ar="حالياً" data-ku="ئێستا">Currently</span>
+      <span data-en="Leading IT engineering at Oak Leaf Company. Open for the next engagement starting Q3 2026." data-ar="مهندس تقنية معلومات رائد في شركة أوك ليف. متاح للعمل في المشروع القادم ابتداءً من الربع الثالث من عام 2026." data-ku="ئەندازیاری پێشەنگی ئایتی لە کۆمپانیای ئۆک لیف. بەردەست دەبم بۆ کارکردن لەسەر پڕۆژەی داهاتوو کە لە چارەکی سێیەمی ساڵی ٢٠٢٦ دەست پێدەکات.">Specifying a CCTV upgrade for a refinery site near Erbil. Open for the next engagement starting Q3 2026.</span>
+    </div>
+    <div class="endmark">
+      <b data-en="Saryas Jaf · Field Notes" data-ar="سرياس جاف · مذكرات ميدانية" data-ku="سەریاس جاف · تێبینی مەیدانی">Saryas Jaf · Field Notes</b>
+      <span data-en="© 2026 · Erbil, Kurdistan Region" data-ar="© 2026 · أربيل، إقليم كردستان" data-ku="© 2026 · هەولێر، هەرێمی کوردستان">© 2026· Erbil, Kurdistan Region</span>
+    </div>
+  </footer>
 
-            // Animated stat counters - count up when scrolled into view
-            (function() {
-                function animateCounter(el) {
-                    var target = parseInt(el.dataset.target, 10);
-                    var suffix = el.dataset.suffix || '';
-                    var duration = 1800;
-                    var startTime = null;
+</div>
 
-                    function step(now) {
-                        if (!startTime) startTime = now;
-                        var progress = Math.min((now - startTime) / duration, 1);
-                        var eased = 1 - Math.pow(1 - progress, 3);
-                        var current = Math.floor(eased * target);
-                        el.textContent = current + (progress === 1 ? suffix : '');
-                        if (progress < 1) requestAnimationFrame(step);
-                    }
-                    requestAnimationFrame(step);
-                }
+<script>
+  // ============================================================
+  // 1. Reveal-on-scroll
+  // ============================================================
+  (function(){
+    if (!('IntersectionObserver' in window)) {
+      document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold:0.15, rootMargin:'0px 0px -80px 0px' });
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  })();
 
-                if ('IntersectionObserver' in window) {
-                    var observer = new IntersectionObserver(function(entries) {
-                        entries.forEach(function(entry) {
-                            if (entry.isIntersecting) {
-                                animateCounter(entry.target);
-                                observer.unobserve(entry.target);
-                            }
-                        });
-                    }, { threshold: 0.4 });
+  // ============================================================
+  // 2. Hero headline word split + reveal
+  // ============================================================
+  (function(){
+    document.querySelectorAll('.js-split').forEach(function(el){
+      // walk children: text nodes get split, element children stay intact
+      var fragments = [];
+      el.childNodes.forEach(function(node){
+        if (node.nodeType === 3) {
+          var words = node.textContent.split(/(\s+)/);
+          words.forEach(function(w){
+            if (w.trim()) fragments.push({type:'word', text:w});
+            else if (w.length) fragments.push({type:'space', text:w});
+          });
+        } else {
+          fragments.push({type:'el', node:node});
+        }
+      });
+      el.innerHTML = '';
+      var i = 0;
+      fragments.forEach(function(f){
+        if (f.type === 'word') {
+          var wrap = document.createElement('span');
+          wrap.className = 'split-word';
+          var inner = document.createElement('span');
+          inner.textContent = f.text;
+          inner.style.setProperty('--d', (0.2 + i*0.1) + 's');
+          wrap.appendChild(inner);
+          el.appendChild(wrap);
+          i++;
+        } else if (f.type === 'space') {
+          el.appendChild(document.createTextNode(f.text));
+        } else if (f.type === 'el') {
+          // wrap the element in a split-word too if it contains text
+          var wrap = document.createElement('span');
+          wrap.className = 'split-word';
+          var inner = document.createElement('span');
+          // copy classes/styles by cloning the element's attributes
+          Array.from(f.node.attributes).forEach(function(a){ inner.setAttribute(a.name, a.value); });
+          inner.innerHTML = f.node.innerHTML;
+          inner.style.setProperty('--d', (0.2 + i*0.1) + 's');
+          wrap.appendChild(inner);
+          el.appendChild(wrap);
+          i++;
+        }
+      });
+    });
+  })();
 
-                    document.querySelectorAll('.stat-number').forEach(function(el) {
-                        observer.observe(el);
-                    });
-                } else {
-                    // Fallback for old browsers - just show the final number
-                    document.querySelectorAll('.stat-number').forEach(function(el) {
-                        el.textContent = el.dataset.target + (el.dataset.suffix || '');
-                    });
-                }
-            })();
+  // ============================================================
+  // 3. Top bar — hide on scroll-down, show on scroll-up
+  // Thresholds tuned for mobile: hide after 80px of scroll (one screen-feel),
+  // reappear immediately on any upward scroll. Direction-detection uses a
+  // small delta (8px) so micro-scrolls don't toggle the bar.
+  // ============================================================
+  (function(){
+    var bar = document.getElementById('topbar');
+    if (!bar) return;
+    var lastY = 0, ticking = false;
+    function onScroll(){
+      var y = Math.max(0, window.scrollY);
+      // Background becomes solid once we're past the hero overlap zone
+      if (y > 40) bar.classList.add('is-solid'); else bar.classList.remove('is-solid');
+      // Hide threshold: 80px is roughly the topbar's own height, so the bar
+      // hides as soon as it would otherwise overlap meaningful content
+      var delta = y - lastY;
+      if (delta > 8 && y > 80) bar.classList.add('is-hidden');
+      else if (delta < -4) bar.classList.remove('is-hidden');
+      lastY = y;
+      ticking = false;
+    }
+    window.addEventListener('scroll', function(){
+      if (!ticking){ window.requestAnimationFrame(onScroll); ticking = true; }
+    }, { passive:true });
+  })();
 
-            // Contact form: AJAX submission to Formspree
-            (function() {
-                var form = document.getElementById('contactForm');
-                if (!form) return;
-                var successMsg = document.getElementById('submitSuccessMessage');
-                var errorMsg = document.getElementById('submitErrorMessage');
-                var submitBtn = document.getElementById('submitButton');
-                var originalBtnText = submitBtn ? submitBtn.textContent : 'Send Message';
+  // ============================================================
+  // 3b. Mobile nav — hamburger toggle + close on link / escape / scroll
+  // ------------------------------------------------------------
+  // Why no `body.style.overflow = 'hidden'` scroll-lock?
+  // iOS Safari has a long-standing bug: setting overflow:hidden on body
+  // does NOT prevent touch-scroll on the underlying page. We could work
+  // around with `position: fixed` body-offset tricks, but the cleaner UX
+  // (and what the user expects) is: any scroll attempt dismisses the
+  // overlay. Matches sheet/modal behavior on iOS/Android system UIs.
+  // ============================================================
+  (function(){
+    var toggle = document.getElementById('navToggle');
+    var menu = document.getElementById('mobileNav');
+    if (!toggle || !menu) return;
+    function isOpen(){ return menu.classList.contains('is-open'); }
+    function setOpen(open){
+      toggle.classList.toggle('is-open', open);
+      menu.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    }
+    function close(){ if (isOpen()) setOpen(false); }
 
-                form.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    if (successMsg) successMsg.classList.add('d-none');
-                    if (errorMsg) errorMsg.classList.add('d-none');
-                    if (submitBtn) {
-                        submitBtn.disabled = true;
-                        submitBtn.textContent = 'Sending...';
-                    }
+    toggle.addEventListener('click', function(){ setOpen(!isOpen()); });
+    // Tapping a nav link closes the menu (the link's anchor still fires →
+    // browser smooth-scrolls to the section)
+    menu.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', close);
+    });
+    // Escape key closes the menu (keyboard users)
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape') close();
+    });
+    // Scroll-to-dismiss: any scroll on the document closes the menu
+    window.addEventListener('scroll', close, { passive:true });
+    // Catch swipe/wheel that targets the overlay itself (covers cases where
+    // the overlay swallows the gesture before it reaches the document)
+    menu.addEventListener('touchmove', close, { passive:true });
+    menu.addEventListener('wheel', close, { passive:true });
+  })();
 
-                    fetch(form.action, {
-                        method: 'POST',
-                        body: new FormData(form),
-                        headers: { 'Accept': 'application/json' }
-                    })
-                    .then(function(response) {
-                        if (response.ok) {
-                            form.reset();
-                            if (successMsg) successMsg.classList.remove('d-none');
-                        } else {
-                            if (errorMsg) errorMsg.classList.remove('d-none');
-                        }
-                    })
-                    .catch(function() {
-                        if (errorMsg) errorMsg.classList.remove('d-none');
-                    })
-                    .finally(function() {
-                        if (submitBtn) {
-                            submitBtn.disabled = false;
-                            submitBtn.textContent = originalBtnText;
-                        }
-                    });
-                });
-            })();
+  // ============================================================
+  // 4. Side scroll indicator
+  // ============================================================
+  (function(){
+    var bar = document.getElementById('scrollBar');
+    var pct = document.getElementById('scrollPct');
+    if (!bar || !pct) return;
+    var ticking = false;
+    function onScroll(){
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      var p = max > 0 ? (window.scrollY / max) : 0;
+      var pp = Math.round(p * 100);
+      bar.style.height = (p * 100) + '%';
+      pct.style.top = (p * 100) + '%';
+      pct.textContent = (pp < 10 ? '0' : '') + pp;
+      ticking = false;
+    }
+    window.addEventListener('scroll', function(){
+      if (!ticking){ window.requestAnimationFrame(onScroll); ticking = true; }
+    }, { passive:true });
+    onScroll();
+  })();
 
-            // Cinematic Circuit Board Animated Background
-            (function() {
-                var canvas = document.getElementById('circuit-board');
-                if (!canvas) return;
-                var ctx = canvas.getContext('2d', { alpha: false });
+  // ============================================================
+  // 5. Animated counters in stat strip
+  // ============================================================
+  (function(){
+    if (!('IntersectionObserver' in window)) {
+      document.querySelectorAll('.js-count').forEach(function(el){ el.textContent = el.dataset.target; });
+      return;
+    }
+    function animate(el){
+      var target = parseInt(el.dataset.target, 10);
+      var dur = 1600;
+      var t0 = null;
+      function step(now){
+        if (!t0) t0 = now;
+        var p = Math.min((now - t0) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.floor(eased * target) + (target >= 10 && p > 0.95 ? '' : '');
+        if (p < 1) requestAnimationFrame(step);
+        else el.textContent = target;
+      }
+      requestAnimationFrame(step);
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ animate(e.target); io.unobserve(e.target); }
+      });
+    }, { threshold:0.5 });
+    document.querySelectorAll('.js-count').forEach(function(el){ io.observe(el); });
+  })();
 
-                var width, height;
-                var paths = [];
-                var nodes = [];
-                var pulses = [];
-                var animationFrameId;
-                var isVisible = true;
+  // ============================================================
+  // 6. Back-to-top button
+  // ============================================================
+  (function(){
+    var btn = document.getElementById('backTop');
+    if (!btn) return;
+    var ticking = false;
+    function onScroll(){
+      if (window.scrollY > 600) btn.classList.add('show');
+      else btn.classList.remove('show');
+      ticking = false;
+    }
+    window.addEventListener('scroll', function(){
+      if (!ticking){ window.requestAnimationFrame(onScroll); ticking = true; }
+    }, {passive:true});
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  })();
 
-                var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // ============================================================
+  // 9. Language switcher (EN / AR / KU)
+  // ============================================================
+  (function(){
+    var langs = ['en','ar','ku'];
+    var langCodes = {en:'en', ar:'ar', ku:'ckb'};
+    function setLang(lang){
+      if (langs.indexOf(lang) === -1) lang = 'en';
+      document.documentElement.lang = langCodes[lang];
+      document.documentElement.dir = lang === 'en' ? 'ltr' : 'rtl';
+      document.querySelectorAll('[data-en]').forEach(function(el){
+        var v = el.dataset[lang];
+        if (typeof v === 'string') el.innerHTML = v;
+      });
+      document.querySelectorAll('[data-placeholder-en]').forEach(function(el){
+        var key = 'placeholder' + lang.charAt(0).toUpperCase() + lang.slice(1);
+        var v = el.dataset[key];
+        if (typeof v === 'string') el.setAttribute('placeholder', v);
+      });
+      document.querySelectorAll('.lang button').forEach(function(btn){
+        var btnLang = btn.dataset.lang;
+        btn.classList.toggle('active', btnLang === lang);
+        btn.setAttribute('aria-pressed', btnLang === lang ? 'true' : 'false');
+      });
+      try{ localStorage.setItem('saryasLang', lang); }catch(e){}
+    }
+    document.querySelectorAll('.lang button').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        setLang(btn.dataset.lang);
+      });
+    });
+    try{
+      var saved = localStorage.getItem('saryasLang');
+      if (saved && langs.indexOf(saved) !== -1) setLang(saved);
+    }catch(e){}
+  })();
 
-                var config = {
-                    colors: {
-                        bg: '#02040A',
-                        gold: { trace: 'rgba(255, 194, 71, 0.22)', bright: 'rgba(255, 224, 138, 1)', glow: 'rgba(255, 159, 28, 0.7)' },
-                        blue: { trace: 'rgba(35, 199, 255, 0.22)', bright: 'rgba(125, 249, 255, 1)', glow: 'rgba(0, 123, 255, 0.7)' }
-                    },
-                    pathCount: 24,
-                    pulseFrequency: 0.03,
-                    maxPulses: 12,
-                    baseSpeed: 2,
-                    nodeBlinkSpeed: 0.05
-                };
+  // ============================================================
+  // 7. Brief form disclosure toggle
+  // ============================================================
+  (function(){
+    var toggle = document.getElementById('formToggle');
+    var disc = document.getElementById('briefDisclosure');
+    if (!toggle || !disc) return;
+    toggle.addEventListener('click', function(){
+      var open = disc.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) {
+        setTimeout(function(){
+          var first = disc.querySelector('input, textarea');
+          if (first) first.focus();
+        }, 450);
+      }
+    });
+  })();
 
-                var lastTime = performance.now();
+  // ============================================================
+  // 8. Form submission to Formspree (AJAX)
+  // ============================================================
+  (function(){
+    var form = document.getElementById('contactForm');
+    if (!form) return;
+    var success = document.getElementById('formSuccess');
+    var error   = document.getElementById('formError');
+    var btn     = document.getElementById('submitButton');
+    var label   = btn ? btn.querySelector('.submit-label') : null;
+    var origLabel = label ? label.textContent : 'Send brief';
 
-                function resize() {
-                    var dpr = Math.min(window.devicePixelRatio || 1, 2);
-                    var parent = canvas.parentElement;
-                    width = parent.clientWidth;
-                    height = parent.clientHeight;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      if (success) success.classList.remove('is-shown');
+      if (error)   error.classList.remove('is-shown');
+      if (btn)   { btn.disabled = true; }
+      if (label) { label.textContent = 'Sending...'; }
 
-                    ctx.setTransform(1, 0, 0, 1, 0, 0);
-                    canvas.width = width * dpr;
-                    canvas.height = height * dpr;
-                    canvas.style.width = width + 'px';
-                    canvas.style.height = height + 'px';
-                    ctx.scale(dpr, dpr);
+      fetch(form.action, {
+        method:'POST',
+        body:new FormData(form),
+        headers:{'Accept':'application/json'}
+      })
+      .then(function(r){
+        if (r.ok) { form.reset(); if (success) success.classList.add('is-shown'); }
+        else if (error) error.classList.add('is-shown');
+      })
+      .catch(function(){ if (error) error.classList.add('is-shown'); })
+      .finally(function(){
+        if (btn)   { btn.disabled = false; }
+        if (label) { label.textContent = origLabel; }
+      });
+    });
+  })();
+</script>
 
-                    config.pathCount = width < 768 ? 12 : 24;
-                    generateCircuitBoard();
-                }
-
-                window.addEventListener('resize', function() {
-                    clearTimeout(window.resizeTimer);
-                    window.resizeTimer = setTimeout(resize, 200);
-                });
-
-                document.addEventListener('visibilitychange', function() {
-                    isVisible = document.visibilityState === 'visible';
-                    if (isVisible) {
-                        lastTime = performance.now();
-                        loop(lastTime);
-                    } else {
-                        cancelAnimationFrame(animationFrameId);
-                    }
-                });
-
-                function generateCircuitBoard() {
-                    paths = [];
-                    nodes = [];
-                    pulses = [];
-
-                    var centerAvoidanceTop = height * 0.35;
-                    var centerAvoidanceBottom = height * 0.65;
-
-                    for (var i = 0; i < config.pathCount; i++) {
-                        var isGold = Math.random() > 0.5;
-                        var colorTheme = isGold ? 'gold' : 'blue';
-                        var startY;
-                        if (Math.random() > 0.3) {
-                            startY = Math.random() > 0.5
-                                ? Math.random() * (height * 0.25)
-                                : height - (Math.random() * (height * 0.25));
-                        } else {
-                            startY = Math.random() * height;
-                        }
-
-                        var x = -Math.random() * 200 - 50;
-                        var y = startY;
-                        var length = 0;
-                        var segments = [];
-                        var points = [{ x: x, y: y }];
-
-                        nodes.push({ x: x, y: y, colorTheme: colorTheme, phase: Math.random() * Math.PI * 2, size: Math.random() * 1.5 + 1 });
-
-                        while (x < width + 100) {
-                            var dx = Math.random() * 150 + 40;
-                            var nextX = x + dx;
-                            segments.push({ p0: {x: x, y: y}, p1: {x: nextX, y: y}, len: dx, startDist: length });
-                            length += dx;
-                            x = nextX;
-                            points.push({ x: x, y: y });
-
-                            if (Math.random() > 0.4) {
-                                nodes.push({ x: x, y: y, colorTheme: colorTheme, phase: Math.random() * Math.PI * 2, size: Math.random() * 1.5 + 1 });
-                            }
-
-                            if (x >= width + 100) break;
-
-                            if (Math.random() > 0.2) {
-                                var dy = (Math.random() * 60 + 20) * (Math.random() > 0.5 ? 1 : -1);
-                                var proposedY = y + dy;
-                                if (proposedY > centerAvoidanceTop && proposedY < centerAvoidanceBottom) {
-                                    dy = -dy;
-                                    proposedY = y + dy;
-                                    if (proposedY > centerAvoidanceTop && proposedY < centerAvoidanceBottom) {
-                                        dy = y < height/2 ? -Math.abs(dy) * 2 : Math.abs(dy) * 2;
-                                    }
-                                }
-                                if (y + dy < 10) dy = Math.abs(dy);
-                                if (y + dy > height - 10) dy = -Math.abs(dy);
-
-                                var absDy = Math.abs(dy);
-                                var diagNextX = x + absDy;
-                                var diagNextY = y + dy;
-                                var diagLen = Math.sqrt(absDy*absDy + dy*dy);
-
-                                segments.push({ p0: {x: x, y: y}, p1: {x: diagNextX, y: diagNextY}, len: diagLen, startDist: length });
-                                length += diagLen;
-                                x = diagNextX;
-                                y = diagNextY;
-                                points.push({ x: x, y: y });
-
-                                nodes.push({ x: x, y: y, colorTheme: colorTheme, phase: Math.random() * Math.PI * 2, size: Math.random() * 1.5 + 1.5 });
-                            }
-                        }
-
-                        segments.forEach(function(seg) { seg.endDist = seg.startDist + seg.len; });
-                        paths.push({ points: points, segments: segments, length: length, colorTheme: colorTheme });
-                    }
-                }
-
-                function spawnPulse() {
-                    if (pulses.length >= config.maxPulses || prefersReducedMotion) return;
-                    var path = paths[Math.floor(Math.random() * paths.length)];
-                    pulses.push({
-                        path: path,
-                        distance: 0,
-                        speed: config.baseSpeed * (Math.random() * 0.8 + 0.6),
-                        tailLength: Math.random() * 150 + 100,
-                        flicker: 1
-                    });
-                }
-
-                function drawPathSegment(ctx, path, startDist, endDist) {
-                    ctx.beginPath();
-                    var started = false;
-                    for (var i = 0; i < path.segments.length; i++) {
-                        var seg = path.segments[i];
-                        if (seg.endDist < startDist || seg.startDist > endDist) continue;
-                        var overlapStartDist = Math.max(seg.startDist, startDist);
-                        var overlapEndDist = Math.min(seg.endDist, endDist);
-                        var t1 = (overlapStartDist - seg.startDist) / seg.len;
-                        var t2 = (overlapEndDist - seg.startDist) / seg.len;
-                        var p1x = seg.p0.x + (seg.p1.x - seg.p0.x) * t1;
-                        var p1y = seg.p0.y + (seg.p1.y - seg.p0.y) * t1;
-                        var p2x = seg.p0.x + (seg.p1.x - seg.p0.x) * t2;
-                        var p2y = seg.p0.y + (seg.p1.y - seg.p0.y) * t2;
-                        if (!started) { ctx.moveTo(p1x, p1y); started = true; }
-                        else { ctx.lineTo(p1x, p1y); }
-                        ctx.lineTo(p2x, p2y);
-                    }
-                    ctx.stroke();
-                }
-
-                function getPointAtDistance(path, dist) {
-                    if (dist <= 0) return path.points[0];
-                    if (dist >= path.length) return path.points[path.points.length - 1];
-                    for (var i = 0; i < path.segments.length; i++) {
-                        var seg = path.segments[i];
-                        if (dist >= seg.startDist && dist <= seg.endDist) {
-                            var t = (dist - seg.startDist) / seg.len;
-                            return {
-                                x: seg.p0.x + (seg.p1.x - seg.p0.x) * t,
-                                y: seg.p0.y + (seg.p1.y - seg.p0.y) * t
-                            };
-                        }
-                    }
-                    return path.points[path.points.length - 1];
-                }
-
-                function loop(time) {
-                    if (!isVisible) return;
-                    lastTime = time;
-
-                    ctx.fillStyle = config.colors.bg;
-                    ctx.fillRect(0, 0, width, height);
-
-                    ctx.globalCompositeOperation = 'source-over';
-                    ctx.lineCap = 'round';
-                    ctx.lineJoin = 'round';
-
-                    paths.forEach(function(path) {
-                        ctx.beginPath();
-                        ctx.moveTo(path.points[0].x, path.points[0].y);
-                        for (var i = 1; i < path.points.length; i++) {
-                            ctx.lineTo(path.points[i].x, path.points[i].y);
-                        }
-                        ctx.lineWidth = 1;
-                        ctx.strokeStyle = config.colors[path.colorTheme].trace;
-                        ctx.stroke();
-                    });
-
-                    nodes.forEach(function(node) {
-                        node.phase += config.nodeBlinkSpeed;
-                        var opacity = (Math.sin(node.phase) + 1) * 0.35 + 0.3;
-                        ctx.beginPath();
-                        ctx.arc(node.x, node.y, node.size, 0, Math.PI * 2);
-                        if (opacity > 0.5 && !prefersReducedMotion) {
-                            ctx.shadowBlur = 15;
-                            ctx.shadowColor = config.colors[node.colorTheme].glow;
-                        } else {
-                            ctx.shadowBlur = 0;
-                        }
-                        var r, g, b;
-                        if (node.colorTheme === 'gold') { r=255; g=194; b=71; }
-                        else { r=35; g=199; b=255; }
-                        ctx.fillStyle = 'rgba(' + r + ', ' + g + ', ' + b + ', ' + opacity + ')';
-                        ctx.fill();
-                    });
-                    ctx.shadowBlur = 0;
-
-                    if (Math.random() < config.pulseFrequency) spawnPulse();
-
-                    if (!prefersReducedMotion) {
-                        ctx.globalCompositeOperation = 'lighter';
-                        for (var i = pulses.length - 1; i >= 0; i--) {
-                            var p = pulses[i];
-                            p.distance += p.speed;
-                            p.flicker = Math.random() * 0.3 + 0.7;
-                            var path = p.path;
-                            var theme = config.colors[path.colorTheme];
-
-                            var tailChunks = 6;
-                            var chunkLen = p.tailLength / tailChunks;
-                            for (var j = 0; j < tailChunks; j++) {
-                                var sDist = p.distance - p.tailLength + (j * chunkLen);
-                                var eDist = sDist + chunkLen + 2;
-                                if (eDist < 0 || sDist > path.length) continue;
-                                var alpha = (j / tailChunks) * 0.6 * p.flicker;
-                                ctx.lineWidth = j === tailChunks - 1 ? 2 : 1.5;
-                                var colorStr = path.colorTheme === 'gold'
-                                    ? 'rgba(255, 194, 71, ' + alpha + ')'
-                                    : 'rgba(35, 199, 255, ' + alpha + ')';
-                                ctx.strokeStyle = colorStr;
-                                drawPathSegment(ctx, path, Math.max(0, sDist), eDist);
-                            }
-
-                            if (p.distance > 0 && p.distance < path.length) {
-                                var headPos = getPointAtDistance(path, p.distance);
-                                ctx.beginPath();
-                                ctx.arc(headPos.x, headPos.y, 2, 0, Math.PI * 2);
-                                ctx.fillStyle = theme.bright;
-                                ctx.shadowBlur = 15 * p.flicker;
-                                ctx.shadowColor = theme.glow;
-                                ctx.fill();
-                                ctx.beginPath();
-                                ctx.arc(headPos.x, headPos.y, 1, 0, Math.PI * 2);
-                                ctx.fillStyle = '#FFFFFF';
-                                ctx.shadowBlur = 5;
-                                ctx.fill();
-                            }
-
-                            if (p.distance - p.tailLength > path.length) {
-                                pulses.splice(i, 1);
-                            }
-                        }
-                    }
-
-                    ctx.globalCompositeOperation = 'source-over';
-                    ctx.shadowBlur = 0;
-                    animationFrameId = requestAnimationFrame(loop);
-                }
-
-                resize();
-                loop(performance.now());
-            })();
-        </script>
-    </body>
+</body>
 </html>
